@@ -1,0 +1,1471 @@
+-- Journal begins at Wed 2021-11-10 22:31:01 EET, ends at Fri 2021-11-12 21:29:08 EET. --
+Nov 12 21:28:15 p2016176 kernel: Linux version 5.14.16-arch1-1 (linux@archlinux) (gcc (GCC) 11.1.0, GNU ld (GNU Binutils) 2.36.1) #1 SMP PREEMPT Tue, 02 Nov 2021 22:22:59 +0000
+Nov 12 21:28:15 p2016176 kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-linux root=UUID=5502af60-a7ed-4d0f-9940-0ba630291c8e rw loglevel=3 quiet
+Nov 12 21:28:15 p2016176 kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Nov 12 21:28:15 p2016176 kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Nov 12 21:28:15 p2016176 kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Nov 12 21:28:15 p2016176 kernel: x86/fpu: Supporting XSAVE feature 0x008: 'MPX bounds registers'
+Nov 12 21:28:15 p2016176 kernel: x86/fpu: Supporting XSAVE feature 0x010: 'MPX CSR'
+Nov 12 21:28:15 p2016176 kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Nov 12 21:28:15 p2016176 kernel: x86/fpu: xstate_offset[3]:  832, xstate_sizes[3]:   64
+Nov 12 21:28:15 p2016176 kernel: x86/fpu: xstate_offset[4]:  896, xstate_sizes[4]:   64
+Nov 12 21:28:15 p2016176 kernel: x86/fpu: Enabled xstate features 0x1f, context size is 960 bytes, using 'compacted' format.
+Nov 12 21:28:15 p2016176 kernel: signal: max sigframe size: 2032
+Nov 12 21:28:15 p2016176 kernel: BIOS-provided physical RAM map:
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x0000000000000000-0x0000000000057fff] usable
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x0000000000058000-0x0000000000058fff] reserved
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x0000000000059000-0x0000000000085fff] usable
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x0000000000086000-0x00000000000fffff] reserved
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x0000000000100000-0x000000006834cfff] usable
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x000000006834d000-0x000000006834dfff] ACPI NVS
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x000000006834e000-0x0000000068377fff] reserved
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x0000000068378000-0x0000000068427fff] usable
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x0000000068428000-0x0000000068d28fff] reserved
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x0000000068d29000-0x0000000075c3dfff] usable
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x0000000075c3e000-0x0000000075e3dfff] type 20
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x0000000075e3e000-0x000000007662dfff] reserved
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x000000007662e000-0x0000000077fadfff] ACPI NVS
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x0000000077fae000-0x0000000077ffdfff] ACPI data
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x0000000077ffe000-0x0000000077ffefff] usable
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x0000000077fff000-0x00000000780fffff] reserved
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x0000000079000000-0x000000007c7fffff] reserved
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x00000000e0000000-0x00000000efffffff] reserved
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x00000000fd000000-0x00000000fe7fffff] reserved
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x00000000feb00000-0x00000000feb03fff] reserved
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x00000000fed00000-0x00000000fed00fff] reserved
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x00000000fed10000-0x00000000fed19fff] reserved
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x00000000fed84000-0x00000000fed84fff] reserved
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x00000000ffa00000-0x00000000ffffffff] reserved
+Nov 12 21:28:15 p2016176 kernel: BIOS-e820: [mem 0x0000000100000000-0x00000002827fffff] usable
+Nov 12 21:28:15 p2016176 kernel: NX (Execute Disable) protection: active
+Nov 12 21:28:15 p2016176 kernel: efi: EFI v2.40 by INSYDE Corp.
+Nov 12 21:28:15 p2016176 kernel: efi: SMBIOS=0x75eb0000 ESRT=0x75fbb118 ACPI 2.0=0x77ffd014 
+Nov 12 21:28:15 p2016176 kernel: SMBIOS 2.8 present.
+Nov 12 21:28:15 p2016176 kernel: DMI: Acer Aspire F5-572G/Zoro_SL , BIOS V1.11 12/23/2015
+Nov 12 21:28:15 p2016176 kernel: tsc: Detected 2400.000 MHz processor
+Nov 12 21:28:15 p2016176 kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Nov 12 21:28:15 p2016176 kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Nov 12 21:28:15 p2016176 kernel: last_pfn = 0x282800 max_arch_pfn = 0x400000000
+Nov 12 21:28:15 p2016176 kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Nov 12 21:28:15 p2016176 kernel: total RAM covered: 14207M
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64K         chunk_size: 64K         num_reg: 10          lose cover RAM: 12583932K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64K         chunk_size: 128K         num_reg: 7          lose cover RAM: 60K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64K         chunk_size: 256K         num_reg: 7          lose cover RAM: 60K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64K         chunk_size: 512K         num_reg: 7          lose cover RAM: 60K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64K         chunk_size: 1M         num_reg: 7          lose cover RAM: 60K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64K         chunk_size: 2M         num_reg: 7          lose cover RAM: 60K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64K         chunk_size: 4M         num_reg: 7          lose cover RAM: 60K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64K         chunk_size: 8M         num_reg: 7          lose cover RAM: 60K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64K         chunk_size: 16M         num_reg: 7          lose cover RAM: 60K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64K         chunk_size: 32M         num_reg: 7          lose cover RAM: 60K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64K         chunk_size: 64M         num_reg: 7          lose cover RAM: 60K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64K         chunk_size: 128M         num_reg: 7          lose cover RAM: 60K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64K         chunk_size: 256M         num_reg: 5          lose cover RAM: 60K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64K         chunk_size: 512M         num_reg: 5          lose cover RAM: 60K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64K         chunk_size: 1G         num_reg: 5          lose cover RAM: 60K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64K         chunk_size: 2G         num_reg: 5          lose cover RAM: 60K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128K         chunk_size: 128K         num_reg: 10          lose cover RAM: 12583932K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128K         chunk_size: 256K         num_reg: 7          lose cover RAM: 124K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128K         chunk_size: 512K         num_reg: 7          lose cover RAM: 124K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128K         chunk_size: 1M         num_reg: 7          lose cover RAM: 124K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128K         chunk_size: 2M         num_reg: 7          lose cover RAM: 124K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128K         chunk_size: 4M         num_reg: 7          lose cover RAM: 124K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128K         chunk_size: 8M         num_reg: 7          lose cover RAM: 124K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128K         chunk_size: 16M         num_reg: 7          lose cover RAM: 124K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128K         chunk_size: 32M         num_reg: 7          lose cover RAM: 124K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128K         chunk_size: 64M         num_reg: 7          lose cover RAM: 124K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128K         chunk_size: 128M         num_reg: 7          lose cover RAM: 124K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128K         chunk_size: 256M         num_reg: 5          lose cover RAM: 124K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128K         chunk_size: 512M         num_reg: 5          lose cover RAM: 124K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128K         chunk_size: 1G         num_reg: 5          lose cover RAM: 124K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128K         chunk_size: 2G         num_reg: 5          lose cover RAM: 124K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 256K         chunk_size: 256K         num_reg: 10          lose cover RAM: 12583932K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 256K         chunk_size: 512K         num_reg: 7          lose cover RAM: 252K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 256K         chunk_size: 1M         num_reg: 7          lose cover RAM: 252K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 256K         chunk_size: 2M         num_reg: 7          lose cover RAM: 252K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 256K         chunk_size: 4M         num_reg: 7          lose cover RAM: 252K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 256K         chunk_size: 8M         num_reg: 7          lose cover RAM: 252K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 256K         chunk_size: 16M         num_reg: 7          lose cover RAM: 252K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 256K         chunk_size: 32M         num_reg: 7          lose cover RAM: 252K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 256K         chunk_size: 64M         num_reg: 7          lose cover RAM: 252K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 256K         chunk_size: 128M         num_reg: 7          lose cover RAM: 252K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 256K         chunk_size: 256M         num_reg: 5          lose cover RAM: 252K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 256K         chunk_size: 512M         num_reg: 5          lose cover RAM: 252K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 256K         chunk_size: 1G         num_reg: 5          lose cover RAM: 252K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 256K         chunk_size: 2G         num_reg: 5          lose cover RAM: 252K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 512K         chunk_size: 512K         num_reg: 10          lose cover RAM: 12583932K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 512K         chunk_size: 1M         num_reg: 7          lose cover RAM: 508K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 512K         chunk_size: 2M         num_reg: 7          lose cover RAM: 508K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 512K         chunk_size: 4M         num_reg: 7          lose cover RAM: 508K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 512K         chunk_size: 8M         num_reg: 7          lose cover RAM: 508K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 512K         chunk_size: 16M         num_reg: 7          lose cover RAM: 508K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 512K         chunk_size: 32M         num_reg: 7          lose cover RAM: 508K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 512K         chunk_size: 64M         num_reg: 7          lose cover RAM: 508K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 512K         chunk_size: 128M         num_reg: 7          lose cover RAM: 508K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 512K         chunk_size: 256M         num_reg: 5          lose cover RAM: 508K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 512K         chunk_size: 512M         num_reg: 5          lose cover RAM: 508K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 512K         chunk_size: 1G         num_reg: 5          lose cover RAM: 508K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 512K         chunk_size: 2G         num_reg: 5          lose cover RAM: 508K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 1M         chunk_size: 1M         num_reg: 10          lose cover RAM: 12583932K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 1M         chunk_size: 2M         num_reg: 7          lose cover RAM: 1020K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 1M         chunk_size: 4M         num_reg: 7          lose cover RAM: 1020K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 1M         chunk_size: 8M         num_reg: 7          lose cover RAM: 1020K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 1M         chunk_size: 16M         num_reg: 7          lose cover RAM: 1020K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 1M         chunk_size: 32M         num_reg: 7          lose cover RAM: 1020K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 1M         chunk_size: 64M         num_reg: 7          lose cover RAM: 1020K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 1M         chunk_size: 128M         num_reg: 7          lose cover RAM: 1020K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 1M         chunk_size: 256M         num_reg: 5          lose cover RAM: 1020K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 1M         chunk_size: 512M         num_reg: 5          lose cover RAM: 1020K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 1M         chunk_size: 1G         num_reg: 5          lose cover RAM: 1020K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 1M         chunk_size: 2G         num_reg: 5          lose cover RAM: 1020K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 2M         chunk_size: 2M         num_reg: 10          lose cover RAM: 8390652K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 2M         chunk_size: 4M         num_reg: 7          lose cover RAM: 2044K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 2M         chunk_size: 8M         num_reg: 7          lose cover RAM: 2044K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 2M         chunk_size: 16M         num_reg: 7          lose cover RAM: 2044K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 2M         chunk_size: 32M         num_reg: 7          lose cover RAM: 2044K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 2M         chunk_size: 64M         num_reg: 7          lose cover RAM: 2044K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 2M         chunk_size: 128M         num_reg: 7          lose cover RAM: 2044K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 2M         chunk_size: 256M         num_reg: 5          lose cover RAM: 2044K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 2M         chunk_size: 512M         num_reg: 5          lose cover RAM: 2044K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 2M         chunk_size: 1G         num_reg: 5          lose cover RAM: 2044K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 2M         chunk_size: 2G         num_reg: 5          lose cover RAM: 2044K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 4M         chunk_size: 4M         num_reg: 10          lose cover RAM: 4092K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 4M         chunk_size: 8M         num_reg: 7          lose cover RAM: 4092K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 4M         chunk_size: 16M         num_reg: 7          lose cover RAM: 4092K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 4M         chunk_size: 32M         num_reg: 7          lose cover RAM: 4092K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 4M         chunk_size: 64M         num_reg: 7          lose cover RAM: 4092K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 4M         chunk_size: 128M         num_reg: 7          lose cover RAM: 4092K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 4M         chunk_size: 256M         num_reg: 5          lose cover RAM: 4092K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 4M         chunk_size: 512M         num_reg: 5          lose cover RAM: 4092K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 4M         chunk_size: 1G         num_reg: 5          lose cover RAM: 4092K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 4M         chunk_size: 2G         num_reg: 5          lose cover RAM: 4092K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 8M         chunk_size: 8M         num_reg: 9          lose cover RAM: 8188K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 8M         chunk_size: 16M         num_reg: 7          lose cover RAM: 8188K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 8M         chunk_size: 32M         num_reg: 7          lose cover RAM: 8188K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 8M         chunk_size: 64M         num_reg: 7          lose cover RAM: 8188K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 8M         chunk_size: 128M         num_reg: 7          lose cover RAM: 8188K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 8M         chunk_size: 256M         num_reg: 5          lose cover RAM: 8188K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 8M         chunk_size: 512M         num_reg: 5          lose cover RAM: 8188K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 8M         chunk_size: 1G         num_reg: 5          lose cover RAM: 8188K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 8M         chunk_size: 2G         num_reg: 5          lose cover RAM: 8188K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 16M         chunk_size: 16M         num_reg: 8          lose cover RAM: 16380K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 16M         chunk_size: 32M         num_reg: 7          lose cover RAM: 16380K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 16M         chunk_size: 64M         num_reg: 7          lose cover RAM: 16380K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 16M         chunk_size: 128M         num_reg: 7          lose cover RAM: 16380K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 16M         chunk_size: 256M         num_reg: 5          lose cover RAM: 16380K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 16M         chunk_size: 512M         num_reg: 5          lose cover RAM: 16380K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 16M         chunk_size: 1G         num_reg: 5          lose cover RAM: 16380K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 16M         chunk_size: 2G         num_reg: 5          lose cover RAM: 16380K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 32M         chunk_size: 32M         num_reg: 7          lose cover RAM: 32764K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 32M         chunk_size: 64M         num_reg: 7          lose cover RAM: 32764K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 32M         chunk_size: 128M         num_reg: 7          lose cover RAM: 32764K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 32M         chunk_size: 256M         num_reg: 5          lose cover RAM: 32764K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 32M         chunk_size: 512M         num_reg: 5          lose cover RAM: 32764K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 32M         chunk_size: 1G         num_reg: 5          lose cover RAM: 32764K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 32M         chunk_size: 2G         num_reg: 5          lose cover RAM: 32764K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64M         chunk_size: 64M         num_reg: 6          lose cover RAM: 65532K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64M         chunk_size: 128M         num_reg: 7          lose cover RAM: 65532K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64M         chunk_size: 256M         num_reg: 5          lose cover RAM: 65532K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64M         chunk_size: 512M         num_reg: 5          lose cover RAM: 65532K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64M         chunk_size: 1G         num_reg: 5          lose cover RAM: 65532K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 64M         chunk_size: 2G         num_reg: 5          lose cover RAM: 65532K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128M         chunk_size: 128M         num_reg: 5          lose cover RAM: 131068K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128M         chunk_size: 256M         num_reg: 5          lose cover RAM: 131068K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128M         chunk_size: 512M         num_reg: 4          lose cover RAM: 131068K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128M         chunk_size: 1G         num_reg: 4          lose cover RAM: 131068K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 128M         chunk_size: 2G         num_reg: 4          lose cover RAM: 131068K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 256M         chunk_size: 256M         num_reg: 5          lose cover RAM: 131068K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 256M         chunk_size: 512M         num_reg: 4          lose cover RAM: 131068K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 256M         chunk_size: 1G         num_reg: 4          lose cover RAM: 131068K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 256M         chunk_size: 2G         num_reg: 4          lose cover RAM: 131068K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 512M         chunk_size: 512M         num_reg: 4          lose cover RAM: 393212K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 512M         chunk_size: 1G         num_reg: 4          lose cover RAM: 393212K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 512M         chunk_size: 2G         num_reg: 4          lose cover RAM: 393212K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 1G         chunk_size: 1G         num_reg: 3          lose cover RAM: 917500K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 1G         chunk_size: 2G         num_reg: 3          lose cover RAM: 917500K
+Nov 12 21:28:15 p2016176 kernel:  gran_size: 2G         chunk_size: 2G         num_reg: 2          lose cover RAM: 1966076K
+Nov 12 21:28:15 p2016176 kernel: mtrr_cleanup: can not find optimal value
+Nov 12 21:28:15 p2016176 kernel: please specify mtrr_gran_size/mtrr_chunk_size
+Nov 12 21:28:15 p2016176 kernel: e820: update [mem 0x77fff000-0xffffffff] usable ==> reserved
+Nov 12 21:28:15 p2016176 kernel: last_pfn = 0x77fff max_arch_pfn = 0x400000000
+Nov 12 21:28:15 p2016176 kernel: esrt: Reserving ESRT space from 0x0000000075fbb118 to 0x0000000075fbb150.
+Nov 12 21:28:15 p2016176 kernel: Using GB pages for direct mapping
+Nov 12 21:28:15 p2016176 kernel: Secure boot disabled
+Nov 12 21:28:15 p2016176 kernel: RAMDISK: [mem 0x3702b000-0x3780cfff]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Early table checksum verification disabled
+Nov 12 21:28:15 p2016176 kernel: ACPI: RSDP 0x0000000077FFD014 000024 (v02 ACRSYS)
+Nov 12 21:28:15 p2016176 kernel: ACPI: XSDT 0x0000000077FDF188 000104 (v01 ACRSYS ACRPRDCT 00000000      01000013)
+Nov 12 21:28:15 p2016176 kernel: ACPI: FACP 0x0000000077FE4000 00010C (v05 ACRSYS ACRPRDCT 00000000 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: DSDT 0x0000000077FC7000 0161A2 (v02 ACRSYS ACRPRDCT 00000000 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: FACS 0x0000000077FA9000 000040
+Nov 12 21:28:15 p2016176 kernel: ACPI: TCPA 0x0000000077FFC000 000032 (v02 ACRSYS ACRPRDCT 00000000 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: UEFI 0x0000000077FFB000 000236 (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: UEFI 0x0000000077FFA000 000042 (v01 ACRSYS ACRPRDCT 00000002 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: SSDT 0x0000000077FF9000 0004B7 (v02 ACRSYS ACRPRDCT 00001000 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: SSDT 0x0000000077FF8000 00004B (v02 ACRSYS ACRPRDCT 00003000 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: TPM2 0x0000000077FF7000 000034 (v03 ACRSYS ACRPRDCT 00000000 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: SSDT 0x0000000077FF2000 0040CA (v01 ACRSYS ACRPRDCT 00001000 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: MSDM 0x0000000077FF1000 000055 (v03 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: SSDT 0x0000000077FEC000 004E73 (v02 ACRSYS ACRPRDCT 00003000 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: DBGP 0x0000000077FEB000 000034 (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: DBG2 0x0000000077FEA000 000054 (v00 ACRSYS ACRPRDCT 00000000 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: SSDT 0x0000000077FE9000 0004CA (v02 ACRSYS ACRPRDCT 00000000 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: ASF! 0x0000000077FE8000 0000A5 (v32 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: ASPT 0x0000000077FE7000 000034 (v07 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: BOOT 0x0000000077FE6000 000028 (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: DBGP 0x0000000077FE5000 000034 (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: HPET 0x0000000077FE3000 000038 (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: LPIT 0x0000000077FE2000 000094 (v01 ACRSYS ACRPRDCT 00000000 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: APIC 0x0000000077FE1000 0000BC (v03 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: MCFG 0x0000000077FE0000 00003C (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: SSDT 0x0000000077FDE000 00019A (v02 ACRSYS ACRPRDCT 00001000 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: SSDT 0x0000000077FC6000 0004A3 (v02 ACRSYS ACRPRDCT 00001000 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: SSDT 0x0000000077FC5000 000E58 (v02 ACRSYS ACRPRDCT 00003000 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: SSDT 0x0000000077FC1000 003009 (v01 ACRSYS ACRPRDCT 00001000 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: DMAR 0x0000000077FC0000 0000CC (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: FPDT 0x0000000077FBF000 000044 (v01 ACRSYS ACRPRDCT 00000002 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: BGRT 0x0000000077FBE000 000038 (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving FACP table memory at [mem 0x77fe4000-0x77fe410b]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving DSDT table memory at [mem 0x77fc7000-0x77fdd1a1]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving FACS table memory at [mem 0x77fa9000-0x77fa903f]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving TCPA table memory at [mem 0x77ffc000-0x77ffc031]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving UEFI table memory at [mem 0x77ffb000-0x77ffb235]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving UEFI table memory at [mem 0x77ffa000-0x77ffa041]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving SSDT table memory at [mem 0x77ff9000-0x77ff94b6]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving SSDT table memory at [mem 0x77ff8000-0x77ff804a]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving TPM2 table memory at [mem 0x77ff7000-0x77ff7033]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving SSDT table memory at [mem 0x77ff2000-0x77ff60c9]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving MSDM table memory at [mem 0x77ff1000-0x77ff1054]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving SSDT table memory at [mem 0x77fec000-0x77ff0e72]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving DBGP table memory at [mem 0x77feb000-0x77feb033]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving DBG2 table memory at [mem 0x77fea000-0x77fea053]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving SSDT table memory at [mem 0x77fe9000-0x77fe94c9]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving ASF! table memory at [mem 0x77fe8000-0x77fe80a4]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving ASPT table memory at [mem 0x77fe7000-0x77fe7033]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving BOOT table memory at [mem 0x77fe6000-0x77fe6027]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving DBGP table memory at [mem 0x77fe5000-0x77fe5033]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving HPET table memory at [mem 0x77fe3000-0x77fe3037]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving LPIT table memory at [mem 0x77fe2000-0x77fe2093]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving APIC table memory at [mem 0x77fe1000-0x77fe10bb]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving MCFG table memory at [mem 0x77fe0000-0x77fe003b]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving SSDT table memory at [mem 0x77fde000-0x77fde199]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving SSDT table memory at [mem 0x77fc6000-0x77fc64a2]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving SSDT table memory at [mem 0x77fc5000-0x77fc5e57]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving SSDT table memory at [mem 0x77fc1000-0x77fc4008]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving DMAR table memory at [mem 0x77fc0000-0x77fc00cb]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving FPDT table memory at [mem 0x77fbf000-0x77fbf043]
+Nov 12 21:28:15 p2016176 kernel: ACPI: Reserving BGRT table memory at [mem 0x77fbe000-0x77fbe037]
+Nov 12 21:28:15 p2016176 kernel: No NUMA configuration found
+Nov 12 21:28:15 p2016176 kernel: Faking a node at [mem 0x0000000000000000-0x00000002827fffff]
+Nov 12 21:28:15 p2016176 kernel: NODE_DATA(0) allocated [mem 0x2827fc000-0x2827fffff]
+Nov 12 21:28:15 p2016176 kernel: Zone ranges:
+Nov 12 21:28:15 p2016176 kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Nov 12 21:28:15 p2016176 kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Nov 12 21:28:15 p2016176 kernel:   Normal   [mem 0x0000000100000000-0x00000002827fffff]
+Nov 12 21:28:15 p2016176 kernel:   Device   empty
+Nov 12 21:28:15 p2016176 kernel: Movable zone start for each node
+Nov 12 21:28:15 p2016176 kernel: Early memory node ranges
+Nov 12 21:28:15 p2016176 kernel:   node   0: [mem 0x0000000000001000-0x0000000000057fff]
+Nov 12 21:28:15 p2016176 kernel:   node   0: [mem 0x0000000000059000-0x0000000000085fff]
+Nov 12 21:28:15 p2016176 kernel:   node   0: [mem 0x0000000000100000-0x000000006834cfff]
+Nov 12 21:28:15 p2016176 kernel:   node   0: [mem 0x0000000068378000-0x0000000068427fff]
+Nov 12 21:28:15 p2016176 kernel:   node   0: [mem 0x0000000068d29000-0x0000000075c3dfff]
+Nov 12 21:28:15 p2016176 kernel:   node   0: [mem 0x0000000077ffe000-0x0000000077ffefff]
+Nov 12 21:28:15 p2016176 kernel:   node   0: [mem 0x0000000100000000-0x00000002827fffff]
+Nov 12 21:28:15 p2016176 kernel: Initmem setup node 0 [mem 0x0000000000001000-0x00000002827fffff]
+Nov 12 21:28:15 p2016176 kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Nov 12 21:28:15 p2016176 kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Nov 12 21:28:15 p2016176 kernel: On node 0, zone DMA: 122 pages in unavailable ranges
+Nov 12 21:28:15 p2016176 kernel: On node 0, zone DMA32: 43 pages in unavailable ranges
+Nov 12 21:28:15 p2016176 kernel: On node 0, zone DMA32: 2305 pages in unavailable ranges
+Nov 12 21:28:15 p2016176 kernel: On node 0, zone DMA32: 9152 pages in unavailable ranges
+Nov 12 21:28:15 p2016176 kernel: On node 0, zone Normal: 1 pages in unavailable ranges
+Nov 12 21:28:15 p2016176 kernel: On node 0, zone Normal: 22528 pages in unavailable ranges
+Nov 12 21:28:15 p2016176 kernel: Reserving Intel graphics memory at [mem 0x7a800000-0x7c7fffff]
+Nov 12 21:28:15 p2016176 kernel: ACPI: PM-Timer IO Port: 0x1808
+Nov 12 21:28:15 p2016176 kernel: ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+Nov 12 21:28:15 p2016176 kernel: ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+Nov 12 21:28:15 p2016176 kernel: ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+Nov 12 21:28:15 p2016176 kernel: ACPI: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+Nov 12 21:28:15 p2016176 kernel: ACPI: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])
+Nov 12 21:28:15 p2016176 kernel: ACPI: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])
+Nov 12 21:28:15 p2016176 kernel: ACPI: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])
+Nov 12 21:28:15 p2016176 kernel: ACPI: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])
+Nov 12 21:28:15 p2016176 kernel: IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-119
+Nov 12 21:28:15 p2016176 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Nov 12 21:28:15 p2016176 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Nov 12 21:28:15 p2016176 kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+Nov 12 21:28:15 p2016176 kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000
+Nov 12 21:28:15 p2016176 kernel: e820: update [mem 0x6b7f3000-0x6b8e6fff] usable ==> reserved
+Nov 12 21:28:15 p2016176 kernel: [Firmware Bug]: TSC_DEADLINE disabled due to Errata; please update microcode to version: 0xb2 (or later)
+Nov 12 21:28:15 p2016176 kernel: smpboot: Allowing 4 CPUs, 0 hotplug CPUs
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0x00058000-0x00058fff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0x00086000-0x000fffff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0x6834d000-0x6834dfff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0x6834e000-0x68377fff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0x68428000-0x68d28fff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0x6b7f3000-0x6b8e6fff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0x75c3e000-0x75e3dfff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0x75e3e000-0x7662dfff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0x7662e000-0x77fadfff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0x77fae000-0x77ffdfff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0x77fff000-0x780fffff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0x78100000-0x78ffffff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0x79000000-0x7c7fffff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0x7c800000-0xdfffffff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0xe0000000-0xefffffff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0xf0000000-0xfcffffff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0xfd000000-0xfe7fffff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0xfe800000-0xfeafffff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0xfeb00000-0xfeb03fff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0xfeb04000-0xfebfffff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0xfec01000-0xfecfffff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0xfed00000-0xfed00fff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0xfed01000-0xfed0ffff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0xfed10000-0xfed19fff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0xfed1a000-0xfed83fff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0xfed84000-0xfed84fff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0xfed85000-0xfedfffff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0xfee01000-0xff9fffff]
+Nov 12 21:28:15 p2016176 kernel: PM: hibernation: Registered nosave memory: [mem 0xffa00000-0xffffffff]
+Nov 12 21:28:15 p2016176 kernel: [mem 0x7c800000-0xdfffffff] available for PCI devices
+Nov 12 21:28:15 p2016176 kernel: Booting paravirtualized kernel on bare hardware
+Nov 12 21:28:15 p2016176 kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370452778343963 ns
+Nov 12 21:28:15 p2016176 kernel: setup_percpu: NR_CPUS:320 nr_cpumask_bits:320 nr_cpu_ids:4 nr_node_ids:1
+Nov 12 21:28:15 p2016176 kernel: percpu: Embedded 57 pages/cpu s196608 r8192 d28672 u524288
+Nov 12 21:28:15 p2016176 kernel: pcpu-alloc: s196608 r8192 d28672 u524288 alloc=1*2097152
+Nov 12 21:28:15 p2016176 kernel: pcpu-alloc: [0] 0 1 2 3 
+Nov 12 21:28:15 p2016176 kernel: Built 1 zonelists, mobility grouping on.  Total pages: 2030630
+Nov 12 21:28:15 p2016176 kernel: Policy zone: Normal
+Nov 12 21:28:15 p2016176 kernel: Kernel command line: BOOT_IMAGE=/boot/vmlinuz-linux root=UUID=5502af60-a7ed-4d0f-9940-0ba630291c8e rw loglevel=3 quiet
+Nov 12 21:28:15 p2016176 kernel: Unknown command line parameters: BOOT_IMAGE=/boot/vmlinuz-linux
+Nov 12 21:28:15 p2016176 kernel: Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+Nov 12 21:28:15 p2016176 kernel: Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+Nov 12 21:28:15 p2016176 kernel: mem auto-init: stack:byref_all(zero), heap alloc:on, heap free:off
+Nov 12 21:28:15 p2016176 kernel: Memory: 7945376K/8251996K available (14344K kernel code, 2064K rwdata, 9356K rodata, 1804K init, 4076K bss, 306360K reserved, 0K cma-reserved)
+Nov 12 21:28:15 p2016176 kernel: random: get_random_u64 called from __kmem_cache_create+0x2a/0x530 with crng_init=0
+Nov 12 21:28:15 p2016176 kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+Nov 12 21:28:15 p2016176 kernel: Kernel/User page tables isolation: enabled
+Nov 12 21:28:15 p2016176 kernel: ftrace: allocating 42552 entries in 167 pages
+Nov 12 21:28:15 p2016176 kernel: ftrace: allocated 167 pages with 5 groups
+Nov 12 21:28:15 p2016176 kernel: rcu: Preemptible hierarchical RCU implementation.
+Nov 12 21:28:15 p2016176 kernel: rcu:         RCU dyntick-idle grace-period acceleration is enabled.
+Nov 12 21:28:15 p2016176 kernel: rcu:         RCU restricting CPUs from NR_CPUS=320 to nr_cpu_ids=4.
+Nov 12 21:28:15 p2016176 kernel: rcu:         RCU priority boosting: priority 1 delay 500 ms.
+Nov 12 21:28:15 p2016176 kernel:         Trampoline variant of Tasks RCU enabled.
+Nov 12 21:28:15 p2016176 kernel:         Rude variant of Tasks RCU enabled.
+Nov 12 21:28:15 p2016176 kernel:         Tracing variant of Tasks RCU enabled.
+Nov 12 21:28:15 p2016176 kernel: rcu: RCU calculated value of scheduler-enlistment delay is 30 jiffies.
+Nov 12 21:28:15 p2016176 kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+Nov 12 21:28:15 p2016176 kernel: NR_IRQS: 20736, nr_irqs: 1024, preallocated irqs: 16
+Nov 12 21:28:15 p2016176 kernel: kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+Nov 12 21:28:15 p2016176 kernel: Console: colour dummy device 80x25
+Nov 12 21:28:15 p2016176 kernel: printk: console [tty0] enabled
+Nov 12 21:28:15 p2016176 kernel: ACPI: Core revision 20210604
+Nov 12 21:28:15 p2016176 kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635855245 ns
+Nov 12 21:28:15 p2016176 kernel: APIC: Switch to symmetric I/O mode setup
+Nov 12 21:28:15 p2016176 kernel: DMAR: Host address width 39
+Nov 12 21:28:15 p2016176 kernel: DMAR: DRHD base: 0x000000fed90000 flags: 0x0
+Nov 12 21:28:15 p2016176 kernel: DMAR: dmar0: reg_base_addr fed90000 ver 1:0 cap 1c0000c40660462 ecap 7e3ff0505e
+Nov 12 21:28:15 p2016176 kernel: DMAR: DRHD base: 0x000000fed91000 flags: 0x1
+Nov 12 21:28:15 p2016176 kernel: DMAR: dmar1: reg_base_addr fed91000 ver 1:0 cap d2008c40660462 ecap f050da
+Nov 12 21:28:15 p2016176 kernel: DMAR: RMRR base: 0x0000007652a000 end: 0x00000076549fff
+Nov 12 21:28:15 p2016176 kernel: DMAR: RMRR base: 0x0000007a000000 end: 0x0000007c7fffff
+Nov 12 21:28:15 p2016176 kernel: DMAR: ANDD device: 1 name: \_SB.PCI0.I2C0
+Nov 12 21:28:15 p2016176 kernel: DMAR-IR: IOAPIC id 2 under DRHD base  0xfed91000 IOMMU 1
+Nov 12 21:28:15 p2016176 kernel: DMAR-IR: HPET id 0 under DRHD base 0xfed91000
+Nov 12 21:28:15 p2016176 kernel: DMAR-IR: x2apic is disabled because BIOS sets x2apic opt out bit.
+Nov 12 21:28:15 p2016176 kernel: DMAR-IR: Use 'intremap=no_x2apic_optout' to override the BIOS setting.
+Nov 12 21:28:15 p2016176 kernel: DMAR-IR: Enabled IRQ remapping in xapic mode
+Nov 12 21:28:15 p2016176 kernel: x2apic: IRQ remapping doesn't support X2APIC mode
+Nov 12 21:28:15 p2016176 kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Nov 12 21:28:15 p2016176 kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x22983777dd9, max_idle_ns: 440795300422 ns
+Nov 12 21:28:15 p2016176 kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 4801.00 BogoMIPS (lpj=8000000)
+Nov 12 21:28:15 p2016176 kernel: pid_max: default: 32768 minimum: 301
+Nov 12 21:28:15 p2016176 kernel: LSM: Security Framework initializing
+Nov 12 21:28:15 p2016176 kernel: landlock: Up and running.
+Nov 12 21:28:15 p2016176 kernel: Yama: becoming mindful.
+Nov 12 21:28:15 p2016176 kernel: LSM support for eBPF active
+Nov 12 21:28:15 p2016176 kernel: Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Nov 12 21:28:15 p2016176 kernel: Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Nov 12 21:28:15 p2016176 kernel: x86/cpu: SGX disabled by BIOS.
+Nov 12 21:28:15 p2016176 kernel: CPU0: Thermal monitoring enabled (TM1)
+Nov 12 21:28:15 p2016176 kernel: process: using mwait in idle threads
+Nov 12 21:28:15 p2016176 kernel: Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+Nov 12 21:28:15 p2016176 kernel: Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+Nov 12 21:28:15 p2016176 kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Nov 12 21:28:15 p2016176 kernel: Spectre V2 : Mitigation: Full generic retpoline
+Nov 12 21:28:15 p2016176 kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+Nov 12 21:28:15 p2016176 kernel: Speculative Store Bypass: Vulnerable
+Nov 12 21:28:15 p2016176 kernel: SRBDS: Vulnerable: No microcode
+Nov 12 21:28:15 p2016176 kernel: MDS: Vulnerable: Clear CPU buffers attempted, no microcode
+Nov 12 21:28:15 p2016176 kernel: Freeing SMP alternatives memory: 36K
+Nov 12 21:28:15 p2016176 kernel: smpboot: Estimated ratio of average max frequency by base frequency (times 1024): 1109
+Nov 12 21:28:15 p2016176 kernel: smpboot: CPU0: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz (family: 0x6, model: 0x4e, stepping: 0x3)
+Nov 12 21:28:15 p2016176 kernel: Performance Events: PEBS fmt3+, Skylake events, 32-deep LBR, full-width counters, Intel PMU driver.
+Nov 12 21:28:15 p2016176 kernel: ... version:                4
+Nov 12 21:28:15 p2016176 kernel: ... bit width:              48
+Nov 12 21:28:15 p2016176 kernel: ... generic registers:      4
+Nov 12 21:28:15 p2016176 kernel: ... value mask:             0000ffffffffffff
+Nov 12 21:28:15 p2016176 kernel: ... max period:             00007fffffffffff
+Nov 12 21:28:15 p2016176 kernel: ... fixed-purpose events:   3
+Nov 12 21:28:15 p2016176 kernel: ... event mask:             000000070000000f
+Nov 12 21:28:15 p2016176 kernel: rcu: Hierarchical SRCU implementation.
+Nov 12 21:28:15 p2016176 kernel: NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+Nov 12 21:28:15 p2016176 kernel: smp: Bringing up secondary CPUs ...
+Nov 12 21:28:15 p2016176 kernel: x86: Booting SMP configuration:
+Nov 12 21:28:15 p2016176 kernel: .... node  #0, CPUs:      #1 #2
+Nov 12 21:28:15 p2016176 kernel: MDS CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html for more details.
+Nov 12 21:28:15 p2016176 kernel:  #3
+Nov 12 21:28:15 p2016176 kernel: smp: Brought up 1 node, 4 CPUs
+Nov 12 21:28:15 p2016176 kernel: smpboot: Max logical packages: 1
+Nov 12 21:28:15 p2016176 kernel: smpboot: Total of 4 processors activated (19207.00 BogoMIPS)
+Nov 12 21:28:15 p2016176 kernel: devtmpfs: initialized
+Nov 12 21:28:15 p2016176 kernel: x86/mm: Memory block size: 128MB
+Nov 12 21:28:15 p2016176 kernel: ACPI: PM: Registering ACPI NVS region [mem 0x6834d000-0x6834dfff] (4096 bytes)
+Nov 12 21:28:15 p2016176 kernel: ACPI: PM: Registering ACPI NVS region [mem 0x7662e000-0x77fadfff] (26738688 bytes)
+Nov 12 21:28:15 p2016176 kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370867519511994 ns
+Nov 12 21:28:15 p2016176 kernel: futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+Nov 12 21:28:15 p2016176 kernel: pinctrl core: initialized pinctrl subsystem
+Nov 12 21:28:15 p2016176 kernel: PM: RTC time: 19:28:07, date: 2021-11-12
+Nov 12 21:28:15 p2016176 kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Nov 12 21:28:15 p2016176 kernel: DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations
+Nov 12 21:28:15 p2016176 kernel: DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Nov 12 21:28:15 p2016176 kernel: DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Nov 12 21:28:15 p2016176 kernel: audit: initializing netlink subsys (disabled)
+Nov 12 21:28:15 p2016176 kernel: audit: type=2000 audit(1636745287.033:1): state=initialized audit_enabled=0 res=1
+Nov 12 21:28:15 p2016176 kernel: thermal_sys: Registered thermal governor 'fair_share'
+Nov 12 21:28:15 p2016176 kernel: thermal_sys: Registered thermal governor 'bang_bang'
+Nov 12 21:28:15 p2016176 kernel: thermal_sys: Registered thermal governor 'step_wise'
+Nov 12 21:28:15 p2016176 kernel: thermal_sys: Registered thermal governor 'user_space'
+Nov 12 21:28:15 p2016176 kernel: thermal_sys: Registered thermal governor 'power_allocator'
+Nov 12 21:28:15 p2016176 kernel: cpuidle: using governor ladder
+Nov 12 21:28:15 p2016176 kernel: cpuidle: using governor menu
+Nov 12 21:28:15 p2016176 kernel: Simple Boot Flag at 0x44 set to 0x1
+Nov 12 21:28:15 p2016176 kernel: HugeTLB: can free 4094 vmemmap pages for hugepages-1048576kB
+Nov 12 21:28:15 p2016176 kernel: ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+Nov 12 21:28:15 p2016176 kernel: ACPI: bus type PCI registered
+Nov 12 21:28:15 p2016176 kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Nov 12 21:28:15 p2016176 kernel: PCI: MMCONFIG for domain 0000 [bus 00-ff] at [mem 0xe0000000-0xefffffff] (base 0xe0000000)
+Nov 12 21:28:15 p2016176 kernel: PCI: MMCONFIG at [mem 0xe0000000-0xefffffff] reserved in E820
+Nov 12 21:28:15 p2016176 kernel: pmd_set_huge: Cannot satisfy [mem 0xe0000000-0xe0200000] with a huge-page mapping due to MTRR override.
+Nov 12 21:28:15 p2016176 kernel: PCI: Using configuration type 1 for base access
+Nov 12 21:28:15 p2016176 kernel: ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+Nov 12 21:28:15 p2016176 kernel: Kprobes globally optimized
+Nov 12 21:28:15 p2016176 kernel: HugeTLB: can free 6 vmemmap pages for hugepages-2048kB
+Nov 12 21:28:15 p2016176 kernel: HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+Nov 12 21:28:15 p2016176 kernel: HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+Nov 12 21:28:15 p2016176 kernel: ACPI: Added _OSI(Module Device)
+Nov 12 21:28:15 p2016176 kernel: ACPI: Added _OSI(Processor Device)
+Nov 12 21:28:15 p2016176 kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+Nov 12 21:28:15 p2016176 kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Nov 12 21:28:15 p2016176 kernel: ACPI: Added _OSI(Linux-Dell-Video)
+Nov 12 21:28:15 p2016176 kernel: ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+Nov 12 21:28:15 p2016176 kernel: ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+Nov 12 21:28:15 p2016176 kernel: ACPI: 10 ACPI AML tables successfully acquired and loaded
+Nov 12 21:28:15 p2016176 kernel: ACPI: [Firmware Bug]: BIOS _OSI(Linux) query ignored
+Nov 12 21:28:15 p2016176 kernel: ACPI: Dynamic OEM Table Load:
+Nov 12 21:28:15 p2016176 kernel: ACPI: SSDT 0xFFFF8BA140FFD800 00061E (v02 PmRef  Cpu0Ist  00003000 INTL 20130117)
+Nov 12 21:28:15 p2016176 kernel: ACPI: \_PR_.CPU0: _OSC native thermal LVT Acked
+Nov 12 21:28:15 p2016176 kernel: ACPI: Dynamic OEM Table Load:
+Nov 12 21:28:15 p2016176 kernel: ACPI: SSDT 0xFFFF8BA14120F800 00037F (v02 PmRef  Cpu0Cst  00003001 INTL 20130117)
+Nov 12 21:28:15 p2016176 kernel: ACPI: Dynamic OEM Table Load:
+Nov 12 21:28:15 p2016176 kernel: ACPI: SSDT 0xFFFF8BA140FF9800 0005AA (v02 PmRef  ApIst    00003000 INTL 20130117)
+Nov 12 21:28:15 p2016176 kernel: ACPI: Dynamic OEM Table Load:
+Nov 12 21:28:15 p2016176 kernel: ACPI: SSDT 0xFFFF8BA141118C00 000119 (v02 PmRef  ApCst    00003000 INTL 20130117)
+Nov 12 21:28:15 p2016176 kernel: ACPI: EC: EC started
+Nov 12 21:28:15 p2016176 kernel: ACPI: EC: interrupt blocked
+Nov 12 21:28:15 p2016176 kernel: ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+Nov 12 21:28:15 p2016176 kernel: ACPI: \_SB_.PCI0.LPCB.EC0_: Boot DSDT EC used to handle transactions
+Nov 12 21:28:15 p2016176 kernel: ACPI: Interpreter enabled
+Nov 12 21:28:15 p2016176 kernel: ACPI: PM: (supports S0 S3 S4 S5)
+Nov 12 21:28:15 p2016176 kernel: ACPI: Using IOAPIC for interrupt routing
+Nov 12 21:28:15 p2016176 kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Nov 12 21:28:15 p2016176 kernel: ACPI: Enabled 9 GPEs in block 00 to 7F
+Nov 12 21:28:15 p2016176 kernel: ACPI: PM: Power Resource [PC01]
+Nov 12 21:28:15 p2016176 kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-fe])
+Nov 12 21:28:15 p2016176 kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+Nov 12 21:28:15 p2016176 kernel: acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME AER PCIeCapability LTR DPC]
+Nov 12 21:28:15 p2016176 kernel: acpi PNP0A08:00: FADT indicates ASPM is unsupported, using BIOS configuration
+Nov 12 21:28:15 p2016176 kernel: PCI host bridge to bus 0000:00
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: root bus resource [mem 0x000c0000-0x000c3fff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: root bus resource [mem 0x000c4000-0x000c7fff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: root bus resource [mem 0x000c8000-0x000cbfff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: root bus resource [mem 0x000cc000-0x000cffff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: root bus resource [mem 0x000d0000-0x000d3fff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: root bus resource [mem 0x000d4000-0x000d7fff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: root bus resource [mem 0x000d8000-0x000dbfff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: root bus resource [mem 0x000dc000-0x000dffff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: root bus resource [mem 0x000e0000-0x000e3fff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: root bus resource [mem 0x000e4000-0x000e7fff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: root bus resource [mem 0x000e8000-0x000ebfff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: root bus resource [mem 0x000ec000-0x000effff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: root bus resource [mem 0x7c800000-0xdfffffff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: root bus resource [mem 0xfd000000-0xfe7fffff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: root bus resource [bus 00-fe]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:00.0: [8086:1904] type 00 class 0x060000
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:02.0: [8086:1916] type 00 class 0x030000
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:02.0: reg 0x10: [mem 0x92000000-0x92ffffff 64bit]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:02.0: reg 0x18: [mem 0xa0000000-0xafffffff 64bit pref]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:02.0: reg 0x20: [io  0x5000-0x503f]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:02.0: BAR 2: assigned to efifb
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:14.0: [8086:9d2f] type 00 class 0x0c0330
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:14.0: reg 0x10: [mem 0x94300000-0x9430ffff 64bit]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:14.0: PME# supported from D3hot D3cold
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:14.2: [8086:9d31] type 00 class 0x118000
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:14.2: reg 0x10: [mem 0x9432a000-0x9432afff 64bit]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:15.0: [8086:9d60] type 00 class 0x118000
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:15.0: reg 0x10: [mem 0x9432b000-0x9432bfff 64bit]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:16.0: [8086:9d3a] type 00 class 0x078000
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:16.0: reg 0x10: [mem 0x9432c000-0x9432cfff 64bit]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:16.0: PME# supported from D3hot
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:17.0: [8086:9d03] type 00 class 0x010601
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:17.0: reg 0x10: [mem 0x94328000-0x94329fff]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:17.0: reg 0x14: [mem 0x9432f000-0x9432f0ff]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:17.0: reg 0x18: [io  0x5080-0x5087]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:17.0: reg 0x1c: [io  0x5088-0x508b]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:17.0: reg 0x20: [io  0x5060-0x507f]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:17.0: reg 0x24: [mem 0x9432d000-0x9432d7ff]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:17.0: PME# supported from D3hot
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.0: [8086:9d10] type 01 class 0x060400
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.4: [8086:9d14] type 01 class 0x060400
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.4: PME# supported from D0 D3hot D3cold
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.5: [8086:9d15] type 01 class 0x060400
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.5: PME# supported from D0 D3hot D3cold
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1f.0: [8086:9d48] type 00 class 0x060100
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1f.2: [8086:9d21] type 00 class 0x058000
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1f.2: reg 0x10: [mem 0x94324000-0x94327fff]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1f.3: [8086:9d70] type 00 class 0x040300
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1f.3: reg 0x10: [mem 0x94320000-0x94323fff 64bit]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1f.3: reg 0x20: [mem 0x94310000-0x9431ffff 64bit]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1f.3: PME# supported from D3hot D3cold
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1f.4: [8086:9d23] type 00 class 0x0c0500
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1f.4: reg 0x10: [mem 0x9432e000-0x9432e0ff 64bit]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1f.4: reg 0x20: [io  0x5040-0x505f]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:01:00.0: [10de:1347] type 00 class 0x030200
+Nov 12 21:28:15 p2016176 kernel: pci 0000:01:00.0: reg 0x10: [mem 0x93000000-0x93ffffff]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:01:00.0: reg 0x14: [mem 0x80000000-0x8fffffff 64bit pref]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:01:00.0: reg 0x1c: [mem 0x90000000-0x91ffffff 64bit pref]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:01:00.0: reg 0x24: [io  0x4000-0x407f]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:01:00.0: reg 0x30: [mem 0xfff80000-0xffffffff pref]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:01:00.0: Enabling HDA controller
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.0: PCI bridge to [bus 01]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.0:   bridge window [io  0x4000-0x4fff]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.0:   bridge window [mem 0x93000000-0x93ffffff]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.0:   bridge window [mem 0x80000000-0x91ffffff 64bit pref]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:02:00.0: [10ec:8168] type 00 class 0x020000
+Nov 12 21:28:15 p2016176 kernel: pci 0000:02:00.0: reg 0x10: [io  0x3000-0x30ff]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:02:00.0: reg 0x18: [mem 0x94204000-0x94204fff 64bit]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:02:00.0: reg 0x20: [mem 0x94200000-0x94203fff 64bit]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:02:00.0: supports D1 D2
+Nov 12 21:28:15 p2016176 kernel: pci 0000:02:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.4: PCI bridge to [bus 02]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.4:   bridge window [io  0x3000-0x3fff]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.4:   bridge window [mem 0x94200000-0x942fffff]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:03:00.0: [168c:0042] type 00 class 0x028000
+Nov 12 21:28:15 p2016176 kernel: pci 0000:03:00.0: reg 0x10: [mem 0x94000000-0x941fffff 64bit]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:03:00.0: PME# supported from D0 D3hot D3cold
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.5: PCI bridge to [bus 03]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.5:   bridge window [mem 0x94000000-0x941fffff]
+Nov 12 21:28:15 p2016176 kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 11
+Nov 12 21:28:15 p2016176 kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+Nov 12 21:28:15 p2016176 kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+Nov 12 21:28:15 p2016176 kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+Nov 12 21:28:15 p2016176 kernel: ACPI: PCI: Interrupt link LNKE configured for IRQ 11
+Nov 12 21:28:15 p2016176 kernel: ACPI: PCI: Interrupt link LNKF configured for IRQ 11
+Nov 12 21:28:15 p2016176 kernel: ACPI: PCI: Interrupt link LNKG configured for IRQ 11
+Nov 12 21:28:15 p2016176 kernel: ACPI: PCI: Interrupt link LNKH configured for IRQ 11
+Nov 12 21:28:15 p2016176 kernel: platform MSFT0101:00: failed to claim resource 1: [mem 0xfed40000-0xfed40fff]
+Nov 12 21:28:15 p2016176 kernel: acpi MSFT0101:00: platform device creation failed: -16
+Nov 12 21:28:15 p2016176 kernel: ACPI Warning: GPE type mismatch (level/edge) (20210604/evxface-791)
+Nov 12 21:28:15 p2016176 kernel: ACPI: EC: interrupt unblocked
+Nov 12 21:28:15 p2016176 kernel: ACPI: EC: event unblocked
+Nov 12 21:28:15 p2016176 kernel: ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+Nov 12 21:28:15 p2016176 kernel: ACPI: EC: GPE=0x50
+Nov 12 21:28:15 p2016176 kernel: ACPI: \_SB_.PCI0.LPCB.EC0_: Boot DSDT EC initialization complete
+Nov 12 21:28:15 p2016176 kernel: ACPI: \_SB_.PCI0.LPCB.EC0_: EC: Used to handle transactions and events
+Nov 12 21:28:15 p2016176 kernel: iommu: Default domain type: Translated 
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+Nov 12 21:28:15 p2016176 kernel: vgaarb: loaded
+Nov 12 21:28:15 p2016176 kernel: SCSI subsystem initialized
+Nov 12 21:28:15 p2016176 kernel: libata version 3.00 loaded.
+Nov 12 21:28:15 p2016176 kernel: ACPI: bus type USB registered
+Nov 12 21:28:15 p2016176 kernel: usbcore: registered new interface driver usbfs
+Nov 12 21:28:15 p2016176 kernel: usbcore: registered new interface driver hub
+Nov 12 21:28:15 p2016176 kernel: usbcore: registered new device driver usb
+Nov 12 21:28:15 p2016176 kernel: pps_core: LinuxPPS API ver. 1 registered
+Nov 12 21:28:15 p2016176 kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Nov 12 21:28:15 p2016176 kernel: PTP clock support registered
+Nov 12 21:28:15 p2016176 kernel: EDAC MC: Ver: 3.0.0
+Nov 12 21:28:15 p2016176 kernel: Registered efivars operations
+Nov 12 21:28:15 p2016176 kernel: NetLabel: Initializing
+Nov 12 21:28:15 p2016176 kernel: NetLabel:  domain hash size = 128
+Nov 12 21:28:15 p2016176 kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Nov 12 21:28:15 p2016176 kernel: NetLabel:  unlabeled traffic allowed by default
+Nov 12 21:28:15 p2016176 kernel: PCI: Using ACPI for IRQ routing
+Nov 12 21:28:15 p2016176 kernel: PCI: pci_cache_line_size set to 64 bytes
+Nov 12 21:28:15 p2016176 kernel: e820: reserve RAM buffer [mem 0x00058000-0x0005ffff]
+Nov 12 21:28:15 p2016176 kernel: e820: reserve RAM buffer [mem 0x00086000-0x0008ffff]
+Nov 12 21:28:15 p2016176 kernel: e820: reserve RAM buffer [mem 0x6834d000-0x6bffffff]
+Nov 12 21:28:15 p2016176 kernel: e820: reserve RAM buffer [mem 0x68428000-0x6bffffff]
+Nov 12 21:28:15 p2016176 kernel: e820: reserve RAM buffer [mem 0x6b7f3000-0x6bffffff]
+Nov 12 21:28:15 p2016176 kernel: e820: reserve RAM buffer [mem 0x75c3e000-0x77ffffff]
+Nov 12 21:28:15 p2016176 kernel: e820: reserve RAM buffer [mem 0x77fff000-0x77ffffff]
+Nov 12 21:28:15 p2016176 kernel: e820: reserve RAM buffer [mem 0x282800000-0x283ffffff]
+Nov 12 21:28:15 p2016176 kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0, 0, 0, 0, 0, 0
+Nov 12 21:28:15 p2016176 kernel: hpet0: 8 comparators, 64-bit 24.000000 MHz counter
+Nov 12 21:28:15 p2016176 kernel: clocksource: Switched to clocksource tsc-early
+Nov 12 21:28:15 p2016176 kernel: VFS: Disk quotas dquot_6.6.0
+Nov 12 21:28:15 p2016176 kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Nov 12 21:28:15 p2016176 kernel: pnp: PnP ACPI init
+Nov 12 21:28:15 p2016176 kernel: system 00:00: [mem 0xfd000000-0xfdabffff] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:00: [mem 0xfdad0000-0xfdadffff] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:00: [mem 0xfdb00000-0xfdffffff] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:00: [mem 0xfe000000-0xfe01ffff] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:00: [mem 0xfe036000-0xfe03bfff] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:00: [mem 0xfe03d000-0xfe3fffff] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:00: [mem 0xfe410000-0xfe7fffff] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:01: [io  0x2000-0x20fe] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:02: [io  0x0680-0x069f] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:02: [io  0xffff] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:02: [io  0xffff] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:02: [io  0xffff] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:02: [io  0x1800-0x18fe] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:02: [io  0x164e-0x164f] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:04: [io  0x1854-0x1857] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:06: [mem 0xfdaf0000-0xfdafffff] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:06: [mem 0xfdae0000-0xfdaeffff] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:06: [mem 0xfdac0000-0xfdacffff] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:07: [mem 0xfed10000-0xfed17fff] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:07: [mem 0xfed18000-0xfed18fff] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:07: [mem 0xfed19000-0xfed19fff] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:07: [mem 0xe0000000-0xefffffff] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:07: [mem 0xfed20000-0xfed3ffff] has been reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:07: [mem 0xfed90000-0xfed93fff] could not be reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:07: [mem 0xfed45000-0xfed8ffff] could not be reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:07: [mem 0xff000000-0xffffffff] could not be reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:07: [mem 0xfee00000-0xfeefffff] could not be reserved
+Nov 12 21:28:15 p2016176 kernel: system 00:07: [mem 0x7c800000-0x7c81ffff] has been reserved
+Nov 12 21:28:15 p2016176 kernel: pnp: PnP ACPI: found 8 devices
+Nov 12 21:28:15 p2016176 kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Nov 12 21:28:15 p2016176 kernel: NET: Registered PF_INET protocol family
+Nov 12 21:28:15 p2016176 kernel: IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Nov 12 21:28:15 p2016176 kernel: tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+Nov 12 21:28:15 p2016176 kernel: TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Nov 12 21:28:15 p2016176 kernel: TCP bind hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+Nov 12 21:28:15 p2016176 kernel: TCP: Hash tables configured (established 65536 bind 65536)
+Nov 12 21:28:15 p2016176 kernel: MPTCP token hash table entries: 8192 (order: 5, 196608 bytes, linear)
+Nov 12 21:28:15 p2016176 kernel: UDP hash table entries: 4096 (order: 5, 131072 bytes, linear)
+Nov 12 21:28:15 p2016176 kernel: UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes, linear)
+Nov 12 21:28:15 p2016176 kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+Nov 12 21:28:15 p2016176 kernel: NET: Registered PF_XDP protocol family
+Nov 12 21:28:15 p2016176 kernel: pci 0000:01:00.0: can't claim BAR 6 [mem 0xfff80000-0xffffffff pref]: no compatible bridge window
+Nov 12 21:28:15 p2016176 kernel: pci 0000:01:00.0: BAR 6: no space for [mem size 0x00080000 pref]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:01:00.0: BAR 6: failed to assign [mem size 0x00080000 pref]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.0: PCI bridge to [bus 01]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.0:   bridge window [io  0x4000-0x4fff]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.0:   bridge window [mem 0x93000000-0x93ffffff]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.0:   bridge window [mem 0x80000000-0x91ffffff 64bit pref]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.4: PCI bridge to [bus 02]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.4:   bridge window [io  0x3000-0x3fff]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.4:   bridge window [mem 0x94200000-0x942fffff]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.5: PCI bridge to [bus 03]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:1c.5:   bridge window [mem 0x94000000-0x941fffff]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: resource 7 [mem 0x000c0000-0x000c3fff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: resource 8 [mem 0x000c4000-0x000c7fff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: resource 9 [mem 0x000c8000-0x000cbfff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: resource 10 [mem 0x000cc000-0x000cffff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: resource 11 [mem 0x000d0000-0x000d3fff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: resource 12 [mem 0x000d4000-0x000d7fff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: resource 13 [mem 0x000d8000-0x000dbfff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: resource 14 [mem 0x000dc000-0x000dffff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: resource 15 [mem 0x000e0000-0x000e3fff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: resource 16 [mem 0x000e4000-0x000e7fff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: resource 17 [mem 0x000e8000-0x000ebfff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: resource 18 [mem 0x000ec000-0x000effff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: resource 19 [mem 0x7c800000-0xdfffffff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:00: resource 20 [mem 0xfd000000-0xfe7fffff window]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:01: resource 0 [io  0x4000-0x4fff]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:01: resource 1 [mem 0x93000000-0x93ffffff]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:01: resource 2 [mem 0x80000000-0x91ffffff 64bit pref]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:02: resource 0 [io  0x3000-0x3fff]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:02: resource 1 [mem 0x94200000-0x942fffff]
+Nov 12 21:28:15 p2016176 kernel: pci_bus 0000:03: resource 1 [mem 0x94000000-0x941fffff]
+Nov 12 21:28:15 p2016176 kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Nov 12 21:28:15 p2016176 kernel: PCI: CLS 64 bytes, default 64
+Nov 12 21:28:15 p2016176 kernel: DMAR: ACPI device "device:69" under DMAR at fed91000 as 00:15.0
+Nov 12 21:28:15 p2016176 kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Nov 12 21:28:15 p2016176 kernel: software IO TLB: mapped [mem 0x0000000071755000-0x0000000075755000] (64MB)
+Nov 12 21:28:15 p2016176 kernel: Trying to unpack rootfs image as initramfs...
+Nov 12 21:28:15 p2016176 kernel: Initialise system trusted keyrings
+Nov 12 21:28:15 p2016176 kernel: Key type blacklist registered
+Nov 12 21:28:15 p2016176 kernel: workingset: timestamp_bits=41 max_order=21 bucket_order=0
+Nov 12 21:28:15 p2016176 kernel: zbud: loaded
+Nov 12 21:28:15 p2016176 kernel: Key type asymmetric registered
+Nov 12 21:28:15 p2016176 kernel: Asymmetric key parser 'x509' registered
+Nov 12 21:28:15 p2016176 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 243)
+Nov 12 21:28:15 p2016176 kernel: io scheduler mq-deadline registered
+Nov 12 21:28:15 p2016176 kernel: io scheduler kyber registered
+Nov 12 21:28:15 p2016176 kernel: io scheduler bfq registered
+Nov 12 21:28:15 p2016176 kernel: pcieport 0000:00:1c.0: PME: Signaling with IRQ 122
+Nov 12 21:28:15 p2016176 kernel: pcieport 0000:00:1c.0: AER: enabled with IRQ 122
+Nov 12 21:28:15 p2016176 kernel: pcieport 0000:00:1c.4: PME: Signaling with IRQ 123
+Nov 12 21:28:15 p2016176 kernel: pcieport 0000:00:1c.4: AER: enabled with IRQ 123
+Nov 12 21:28:15 p2016176 kernel: pcieport 0000:00:1c.5: PME: Signaling with IRQ 124
+Nov 12 21:28:15 p2016176 kernel: pcieport 0000:00:1c.5: AER: enabled with IRQ 124
+Nov 12 21:28:15 p2016176 kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+Nov 12 21:28:15 p2016176 kernel: efifb: probing for efifb
+Nov 12 21:28:15 p2016176 kernel: efifb: showing boot graphics
+Nov 12 21:28:15 p2016176 kernel: efifb: framebuffer at 0xa0000000, using 8128k, total 8128k
+Nov 12 21:28:15 p2016176 kernel: efifb: mode is 1920x1080x32, linelength=7680, pages=1
+Nov 12 21:28:15 p2016176 kernel: efifb: scrolling: redraw
+Nov 12 21:28:15 p2016176 kernel: efifb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+Nov 12 21:28:15 p2016176 kernel: fbcon: Deferring console take-over
+Nov 12 21:28:15 p2016176 kernel: fb0: EFI VGA frame buffer device
+Nov 12 21:28:15 p2016176 kernel: ACPI: AC: AC Adapter [ACAD] (on-line)
+Nov 12 21:28:15 p2016176 kernel: input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0
+Nov 12 21:28:15 p2016176 kernel: ACPI: button: Power Button [PWRB]
+Nov 12 21:28:15 p2016176 kernel: input: Sleep Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input1
+Nov 12 21:28:15 p2016176 kernel: ACPI: button: Sleep Button [SLPB]
+Nov 12 21:28:15 p2016176 kernel: input: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input2
+Nov 12 21:28:15 p2016176 kernel: ACPI: button: Lid Switch [LID0]
+Nov 12 21:28:15 p2016176 kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input3
+Nov 12 21:28:15 p2016176 kernel: ACPI: button: Power Button [PWRF]
+Nov 12 21:28:15 p2016176 kernel: thermal LNXTHERM:00: registered as thermal_zone0
+Nov 12 21:28:15 p2016176 kernel: ACPI: thermal: Thermal Zone [TZ01] (42 C)
+Nov 12 21:28:15 p2016176 kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+Nov 12 21:28:15 p2016176 kernel: ACPI: battery: Slot [BAT1] (battery present)
+Nov 12 21:28:15 p2016176 kernel: Non-volatile memory driver v1.3
+Nov 12 21:28:15 p2016176 kernel: AMD-Vi: AMD IOMMUv2 driver by Joerg Roedel <jroedel@suse.de>
+Nov 12 21:28:15 p2016176 kernel: AMD-Vi: AMD IOMMUv2 functionality not available on this system
+Nov 12 21:28:15 p2016176 kernel: ahci 0000:00:17.0: version 3.0
+Nov 12 21:28:15 p2016176 kernel: ahci 0000:00:17.0: AHCI 0001.0301 32 slots 2 ports 6 Gbps 0x3 impl SATA mode
+Nov 12 21:28:15 p2016176 kernel: ahci 0000:00:17.0: flags: 64bit ncq pm led clo only pio slum part deso sadm sds apst 
+Nov 12 21:28:15 p2016176 kernel: scsi host0: ahci
+Nov 12 21:28:15 p2016176 kernel: scsi host1: ahci
+Nov 12 21:28:15 p2016176 kernel: ata1: SATA max UDMA/133 abar m2048@0x9432d000 port 0x9432d100 irq 125
+Nov 12 21:28:15 p2016176 kernel: ata2: SATA max UDMA/133 abar m2048@0x9432d000 port 0x9432d180 irq 125
+Nov 12 21:28:15 p2016176 kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Nov 12 21:28:15 p2016176 kernel: ehci-pci: EHCI PCI platform driver
+Nov 12 21:28:15 p2016176 kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Nov 12 21:28:15 p2016176 kernel: ohci-pci: OHCI PCI platform driver
+Nov 12 21:28:15 p2016176 kernel: uhci_hcd: USB Universal Host Controller Interface driver
+Nov 12 21:28:15 p2016176 kernel: usbcore: registered new interface driver usbserial_generic
+Nov 12 21:28:15 p2016176 kernel: usbserial: USB Serial support registered for generic
+Nov 12 21:28:15 p2016176 kernel: rtc_cmos 00:03: RTC can wake from S4
+Nov 12 21:28:15 p2016176 kernel: rtc_cmos 00:03: registered as rtc0
+Nov 12 21:28:15 p2016176 kernel: rtc_cmos 00:03: setting system clock to 2021-11-12T19:28:07 UTC (1636745287)
+Nov 12 21:28:15 p2016176 kernel: rtc_cmos 00:03: alarms up to one month, y3k, 242 bytes nvram, hpet irqs
+Nov 12 21:28:15 p2016176 kernel: intel_pstate: Intel P-state driver initializing
+Nov 12 21:28:15 p2016176 kernel: intel_pstate: HWP enabled
+Nov 12 21:28:15 p2016176 kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Nov 12 21:28:15 p2016176 kernel: hid: raw HID events driver (C) Jiri Kosina
+Nov 12 21:28:15 p2016176 kernel: intel_pmc_core intel_pmc_core.0:  initialized
+Nov 12 21:28:15 p2016176 kernel: drop_monitor: Initializing network drop monitor service
+Nov 12 21:28:15 p2016176 kernel: Initializing XFRM netlink socket
+Nov 12 21:28:15 p2016176 kernel: NET: Registered PF_INET6 protocol family
+Nov 12 21:28:15 p2016176 kernel: Freeing initrd memory: 8072K
+Nov 12 21:28:15 p2016176 kernel: Segment Routing with IPv6
+Nov 12 21:28:15 p2016176 kernel: RPL Segment Routing with IPv6
+Nov 12 21:28:15 p2016176 kernel: NET: Registered PF_PACKET protocol family
+Nov 12 21:28:15 p2016176 kernel: microcode: sig=0x406e3, pf=0x80, revision=0x6a
+Nov 12 21:28:15 p2016176 kernel: microcode: Microcode Update Driver: v2.2.
+Nov 12 21:28:15 p2016176 kernel: IPI shorthand broadcast: enabled
+Nov 12 21:28:15 p2016176 kernel: sched_clock: Marking stable (359713955, 548665)->(362260948, -1998328)
+Nov 12 21:28:15 p2016176 kernel: registered taskstats version 1
+Nov 12 21:28:15 p2016176 kernel: Loading compiled-in X.509 certificates
+Nov 12 21:28:15 p2016176 kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 4bf053f8e5c4b77ad32d170608834d80a907d8c3'
+Nov 12 21:28:15 p2016176 kernel: zswap: loaded using pool lz4/z3fold
+Nov 12 21:28:15 p2016176 kernel: Key type ._fscrypt registered
+Nov 12 21:28:15 p2016176 kernel: Key type .fscrypt registered
+Nov 12 21:28:15 p2016176 kernel: Key type fscrypt-provisioning registered
+Nov 12 21:28:15 p2016176 kernel: PM:   Magic number: 13:873:495
+Nov 12 21:28:15 p2016176 kernel: RAS: Correctable Errors collector initialized.
+Nov 12 21:28:15 p2016176 kernel: ata2: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+Nov 12 21:28:15 p2016176 kernel: ata1: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+Nov 12 21:28:15 p2016176 kernel: ata1.00: ATA-8: HGST HTS545050A7E380, GG2OAC90, max UDMA/133
+Nov 12 21:28:15 p2016176 kernel: ata1.00: 976773168 sectors, multi 16: LBA48 NCQ (depth 32), AA
+Nov 12 21:28:15 p2016176 kernel: ata2.00: ATAPI: Slimtype DVD A  DA8A6SH, GA11, max UDMA/133
+Nov 12 21:28:15 p2016176 kernel: ata1.00: configured for UDMA/133
+Nov 12 21:28:15 p2016176 kernel: ata2.00: configured for UDMA/133
+Nov 12 21:28:15 p2016176 kernel: scsi 0:0:0:0: Direct-Access     ATA      HGST HTS545050A7 AC90 PQ: 0 ANSI: 5
+Nov 12 21:28:15 p2016176 kernel: sd 0:0:0:0: [sda] 976773168 512-byte logical blocks: (500 GB/466 GiB)
+Nov 12 21:28:15 p2016176 kernel: sd 0:0:0:0: [sda] 4096-byte physical blocks
+Nov 12 21:28:15 p2016176 kernel: sd 0:0:0:0: [sda] Write Protect is off
+Nov 12 21:28:15 p2016176 kernel: sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+Nov 12 21:28:15 p2016176 kernel: sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Nov 12 21:28:15 p2016176 kernel: scsi 1:0:0:0: CD-ROM            Slimtype DVD A  DA8A6SH   GA11 PQ: 0 ANSI: 5
+Nov 12 21:28:15 p2016176 kernel:  sda: sda1 sda2 sda3
+Nov 12 21:28:15 p2016176 kernel: sd 0:0:0:0: [sda] Attached SCSI disk
+Nov 12 21:28:15 p2016176 kernel: Freeing unused decrypted memory: 2036K
+Nov 12 21:28:15 p2016176 kernel: Freeing unused kernel image (initmem) memory: 1804K
+Nov 12 21:28:15 p2016176 kernel: Write protecting the kernel read-only data: 26624k
+Nov 12 21:28:15 p2016176 kernel: Freeing unused kernel image (text/rodata gap) memory: 2036K
+Nov 12 21:28:15 p2016176 kernel: Freeing unused kernel image (rodata/data gap) memory: 884K
+Nov 12 21:28:15 p2016176 kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Nov 12 21:28:15 p2016176 kernel: rodata_test: all tests were successful
+Nov 12 21:28:15 p2016176 kernel: x86/mm: Checking user space page tables
+Nov 12 21:28:15 p2016176 kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Nov 12 21:28:15 p2016176 kernel: Run /init as init process
+Nov 12 21:28:15 p2016176 kernel:   with arguments:
+Nov 12 21:28:15 p2016176 kernel:     /init
+Nov 12 21:28:15 p2016176 kernel:   with environment:
+Nov 12 21:28:15 p2016176 kernel:     HOME=/
+Nov 12 21:28:15 p2016176 kernel:     TERM=linux
+Nov 12 21:28:15 p2016176 kernel:     BOOT_IMAGE=/boot/vmlinuz-linux
+Nov 12 21:28:15 p2016176 kernel: fbcon: Taking over console
+Nov 12 21:28:15 p2016176 kernel: Console: switching to colour frame buffer device 240x67
+Nov 12 21:28:15 p2016176 kernel: xhci_hcd 0000:00:14.0: xHCI Host Controller
+Nov 12 21:28:15 p2016176 kernel: xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 1
+Nov 12 21:28:15 p2016176 kernel: xhci_hcd 0000:00:14.0: hcc params 0x200077c1 hci version 0x100 quirks 0x0000000081109810
+Nov 12 21:28:15 p2016176 kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K] at 0x60,0x64 irq 1
+Nov 12 21:28:15 p2016176 kernel: i8042: PNP: PS/2 appears to have AUX port disabled, if this is incorrect please boot with i8042.nopnp
+Nov 12 21:28:15 p2016176 kernel: xhci_hcd 0000:00:14.0: xHCI Host Controller
+Nov 12 21:28:15 p2016176 kernel: xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 2
+Nov 12 21:28:15 p2016176 kernel: xhci_hcd 0000:00:14.0: Host supports USB 3.0 SuperSpeed
+Nov 12 21:28:15 p2016176 kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.14
+Nov 12 21:28:15 p2016176 kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Nov 12 21:28:15 p2016176 kernel: usb usb1: Product: xHCI Host Controller
+Nov 12 21:28:15 p2016176 kernel: usb usb1: Manufacturer: Linux 5.14.16-arch1-1 xhci-hcd
+Nov 12 21:28:15 p2016176 kernel: usb usb1: SerialNumber: 0000:00:14.0
+Nov 12 21:28:15 p2016176 kernel: hub 1-0:1.0: USB hub found
+Nov 12 21:28:15 p2016176 kernel: hub 1-0:1.0: 12 ports detected
+Nov 12 21:28:15 p2016176 kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Nov 12 21:28:15 p2016176 kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.14
+Nov 12 21:28:15 p2016176 kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Nov 12 21:28:15 p2016176 kernel: usb usb2: Product: xHCI Host Controller
+Nov 12 21:28:15 p2016176 kernel: usb usb2: Manufacturer: Linux 5.14.16-arch1-1 xhci-hcd
+Nov 12 21:28:15 p2016176 kernel: usb usb2: SerialNumber: 0000:00:14.0
+Nov 12 21:28:15 p2016176 kernel: hub 2-0:1.0: USB hub found
+Nov 12 21:28:15 p2016176 kernel: hub 2-0:1.0: 6 ports detected
+Nov 12 21:28:15 p2016176 kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input4
+Nov 12 21:28:15 p2016176 kernel: sr 1:0:0:0: [sr0] scsi3-mmc drive: 24x/24x writer dvd-ram cd/rw xa/form2 cdda tray
+Nov 12 21:28:15 p2016176 kernel: cdrom: Uniform CD-ROM driver Revision: 3.20
+Nov 12 21:28:15 p2016176 kernel: sr 1:0:0:0: Attached scsi CD-ROM sr0
+Nov 12 21:28:15 p2016176 kernel: usb 1-5: new full-speed USB device number 2 using xhci_hcd
+Nov 12 21:28:15 p2016176 kernel: tsc: Refined TSC clocksource calibration: 2399.999 MHz
+Nov 12 21:28:15 p2016176 kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x2298364cab5, max_idle_ns: 440795214892 ns
+Nov 12 21:28:15 p2016176 kernel: clocksource: Switched to clocksource tsc
+Nov 12 21:28:15 p2016176 kernel: usb 1-5: New USB device found, idVendor=0489, idProduct=e09c, bcdDevice= 0.01
+Nov 12 21:28:15 p2016176 kernel: usb 1-5: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Nov 12 21:28:15 p2016176 kernel: usb 1-7: new high-speed USB device number 3 using xhci_hcd
+Nov 12 21:28:15 p2016176 kernel: usb 1-7: New USB device found, idVendor=04f2, idProduct=b526, bcdDevice=22.06
+Nov 12 21:28:15 p2016176 kernel: usb 1-7: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Nov 12 21:28:15 p2016176 kernel: usb 1-7: Product: HD WebCam
+Nov 12 21:28:15 p2016176 kernel: usb 1-7: Manufacturer: SunplusIT INC.
+Nov 12 21:28:15 p2016176 kernel: usb 1-8: new high-speed USB device number 4 using xhci_hcd
+Nov 12 21:28:15 p2016176 kernel: random: fast init done
+Nov 12 21:28:15 p2016176 kernel: usb 1-8: New USB device found, idVendor=0bda, idProduct=0129, bcdDevice=39.60
+Nov 12 21:28:15 p2016176 kernel: usb 1-8: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Nov 12 21:28:15 p2016176 kernel: usb 1-8: Product: USB2.0-CRW
+Nov 12 21:28:15 p2016176 kernel: usb 1-8: Manufacturer: Generic
+Nov 12 21:28:15 p2016176 kernel: usb 1-8: SerialNumber: 20100201396000000
+Nov 12 21:28:15 p2016176 kernel: usbcore: registered new interface driver rtsx_usb
+Nov 12 21:28:15 p2016176 kernel: EXT4-fs (sda3): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+Nov 12 21:28:15 p2016176 kernel: random: crng init done
+Nov 12 21:28:15 p2016176 systemd[1]: systemd 249.5-3-arch running in system mode (+PAM +AUDIT -SELINUX -APPARMOR -IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +XKBCOMMON +UTMP -SYSVINIT default-hierarchy=unified)
+Nov 12 21:28:15 p2016176 systemd[1]: Detected architecture x86-64.
+Nov 12 21:28:15 p2016176 systemd[1]: Hostname set to <p2016176>.
+Nov 12 21:28:15 p2016176 systemd[1]: Queued start job for default target Graphical Interface.
+Nov 12 21:28:15 p2016176 systemd[1]: Created slice Slice /system/getty.
+Nov 12 21:28:15 p2016176 systemd[1]: Created slice Slice /system/modprobe.
+Nov 12 21:28:15 p2016176 systemd[1]: Created slice User and Session Slice.
+Nov 12 21:28:15 p2016176 systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+Nov 12 21:28:15 p2016176 systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+Nov 12 21:28:15 p2016176 systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+Nov 12 21:28:15 p2016176 systemd[1]: Reached target Local Encrypted Volumes.
+Nov 12 21:28:15 p2016176 systemd[1]: Reached target Path Units.
+Nov 12 21:28:15 p2016176 systemd[1]: Reached target Remote File Systems.
+Nov 12 21:28:15 p2016176 systemd[1]: Reached target Slice Units.
+Nov 12 21:28:15 p2016176 systemd[1]: Reached target Local Verity Integrity Protected Volumes.
+Nov 12 21:28:15 p2016176 systemd[1]: Listening on Device-mapper event daemon FIFOs.
+Nov 12 21:28:15 p2016176 systemd[1]: Listening on Process Core Dump Socket.
+Nov 12 21:28:15 p2016176 systemd[1]: Listening on Journal Audit Socket.
+Nov 12 21:28:15 p2016176 systemd[1]: Listening on Journal Socket (/dev/log).
+Nov 12 21:28:15 p2016176 systemd[1]: Listening on Journal Socket.
+Nov 12 21:28:15 p2016176 systemd[1]: Listening on udev Control Socket.
+Nov 12 21:28:15 p2016176 systemd[1]: Listening on udev Kernel Socket.
+Nov 12 21:28:15 p2016176 systemd[1]: Mounting Huge Pages File System...
+Nov 12 21:28:15 p2016176 systemd[1]: Mounting POSIX Message Queue File System...
+Nov 12 21:28:15 p2016176 systemd[1]: Mounting Kernel Debug File System...
+Nov 12 21:28:15 p2016176 systemd[1]: Mounting Kernel Trace File System...
+Nov 12 21:28:15 p2016176 systemd[1]: Starting Create List of Static Device Nodes...
+Nov 12 21:28:15 p2016176 systemd[1]: Starting Load Kernel Module configfs...
+Nov 12 21:28:15 p2016176 systemd[1]: Starting Load Kernel Module drm...
+Nov 12 21:28:15 p2016176 systemd[1]: Starting Load Kernel Module fuse...
+Nov 12 21:28:15 p2016176 systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+Nov 12 21:28:15 p2016176 systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+Nov 12 21:28:15 p2016176 kernel: fuse: init (API version 7.34)
+Nov 12 21:28:15 p2016176 systemd[1]: Starting Journal Service...
+Nov 12 21:28:15 p2016176 systemd[1]: Condition check resulted in Load Kernel Modules being skipped.
+Nov 12 21:28:15 p2016176 systemd[1]: Starting Remount Root and Kernel File Systems...
+Nov 12 21:28:15 p2016176 systemd[1]: Condition check resulted in Repartition Root Disk being skipped.
+Nov 12 21:28:15 p2016176 systemd[1]: Starting Apply Kernel Variables...
+Nov 12 21:28:15 p2016176 systemd[1]: Starting Coldplug All udev Devices...
+Nov 12 21:28:15 p2016176 systemd[1]: Mounted Huge Pages File System.
+Nov 12 21:28:15 p2016176 systemd[1]: Mounted POSIX Message Queue File System.
+Nov 12 21:28:15 p2016176 systemd[1]: Mounted Kernel Debug File System.
+Nov 12 21:28:15 p2016176 systemd[1]: Mounted Kernel Trace File System.
+Nov 12 21:28:15 p2016176 systemd[1]: Finished Create List of Static Device Nodes.
+Nov 12 21:28:15 p2016176 systemd[1]: modprobe@configfs.service: Deactivated successfully.
+Nov 12 21:28:15 p2016176 systemd[1]: Finished Load Kernel Module configfs.
+Nov 12 21:28:15 p2016176 systemd[1]: modprobe@fuse.service: Deactivated successfully.
+Nov 12 21:28:15 p2016176 systemd[1]: Finished Load Kernel Module fuse.
+Nov 12 21:28:15 p2016176 systemd[1]: Mounting FUSE Control File System...
+Nov 12 21:28:15 p2016176 systemd[1]: Mounting Kernel Configuration File System...
+Nov 12 21:28:15 p2016176 systemd[1]: Mounted FUSE Control File System.
+Nov 12 21:28:15 p2016176 systemd[1]: Mounted Kernel Configuration File System.
+Nov 12 21:28:15 p2016176 kernel: EXT4-fs (sda3): re-mounted. Opts: (null). Quota mode: none.
+Nov 12 21:28:15 p2016176 systemd[1]: Finished Remount Root and Kernel File Systems.
+Nov 12 21:28:15 p2016176 systemd[1]: Condition check resulted in First Boot Wizard being skipped.
+Nov 12 21:28:15 p2016176 systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+Nov 12 21:28:15 p2016176 systemd[1]: Starting Load/Save Random Seed...
+Nov 12 21:28:15 p2016176 systemd[1]: Starting Create System Users...
+Nov 12 21:28:15 p2016176 systemd[1]: modprobe@drm.service: Deactivated successfully.
+Nov 12 21:28:15 p2016176 systemd[1]: Finished Load Kernel Module drm.
+Nov 12 21:28:15 p2016176 systemd-journald[200]: Journal started
+Nov 12 21:28:15 p2016176 systemd-journald[200]: Runtime Journal (/run/log/journal/e65e726af473444f83cc0eecda591f17) is 8.0M, max 390.9M, 382.9M free.
+Nov 12 21:28:15 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:15 p2016176 systemd[1]: Starting Flush Journal to Persistent Storage...
+Nov 12 21:28:15 p2016176 systemd[1]: Started Journal Service.
+Nov 12 21:28:15 p2016176 kernel: audit: type=1130 audit(1636745295.152:2): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:15 p2016176 systemd[1]: Finished Coldplug All udev Devices.
+Nov 12 21:28:15 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-udev-trigger comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:15 p2016176 kernel: audit: type=1130 audit(1636745295.162:3): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-udev-trigger comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:15 p2016176 systemd[1]: Finished Apply Kernel Variables.
+Nov 12 21:28:15 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-sysctl comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:15 p2016176 kernel: audit: type=1130 audit(1636745295.192:4): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-sysctl comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:15 p2016176 systemd-journald[200]: Time spent on flushing to /var/log/journal/e65e726af473444f83cc0eecda591f17 is 14.168331s for 950 entries.
+Nov 12 21:28:15 p2016176 systemd-journald[200]: System Journal (/var/log/journal/e65e726af473444f83cc0eecda591f17) is 56.0M, max 4.0G, 3.9G free.
+Nov 12 21:28:30 p2016176 kernel: audit: type=1130 audit(1636745295.658:5): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-random-seed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:30 p2016176 kernel: audit: type=1130 audit(1636745295.948:6): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-sysusers comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:30 p2016176 kernel: audit: type=1130 audit(1636745296.655:7): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-setup-dev comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:30 p2016176 kernel: loop: module loaded
+Nov 12 21:28:30 p2016176 kernel: loop2: detected capacity change from 0 to 133552
+Nov 12 21:28:30 p2016176 kernel: loop1: detected capacity change from 0 to 8
+Nov 12 21:28:30 p2016176 kernel: loop0: detected capacity change from 0 to 533936
+Nov 12 21:28:30 p2016176 kernel: loop3: detected capacity change from 0 to 113656
+Nov 12 21:28:30 p2016176 kernel: loop4: detected capacity change from 0 to 5944
+Nov 12 21:28:30 p2016176 kernel: audit: type=1334 audit(1636745296.998:8): prog-id=14 op=LOAD
+Nov 12 21:28:30 p2016176 kernel: audit: type=1334 audit(1636745297.002:9): prog-id=15 op=LOAD
+Nov 12 21:28:30 p2016176 kernel: audit: type=1334 audit(1636745297.002:10): prog-id=16 op=LOAD
+Nov 12 21:28:30 p2016176 kernel: loop5: detected capacity change from 0 to 66440
+Nov 12 21:28:30 p2016176 kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Nov 12 21:28:30 p2016176 kernel: audit: type=1130 audit(1636745298.235:11): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-udevd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:30 p2016176 kernel: wmi_bus wmi_bus-PNP0C14:01: WQ data block query control method not found
+Nov 12 21:28:30 p2016176 kernel: wmi_bus wmi_bus-PNP0C14:01: WQ data block query control method not found
+Nov 12 21:28:30 p2016176 kernel: wmi_bus wmi_bus-PNP0C14:01: WQ data block query control method not found
+Nov 12 21:28:30 p2016176 kernel: wmi_bus wmi_bus-PNP0C14:01: WQ data block query control method not found
+Nov 12 21:28:30 p2016176 kernel: i801_smbus 0000:00:1f.4: SPD Write Disable is set
+Nov 12 21:28:30 p2016176 kernel: i801_smbus 0000:00:1f.4: SMBus using PCI interrupt
+Nov 12 21:28:30 p2016176 kernel: i2c i2c-0: 1/4 memory slots populated (from DMI)
+Nov 12 21:28:30 p2016176 kernel: i2c i2c-0: Successfully instantiated SPD at 0x50
+Nov 12 21:28:30 p2016176 kernel: mei_me 0000:00:16.0: enabling device (0000 -> 0002)
+Nov 12 21:28:30 p2016176 kernel: intel-lpss 0000:00:15.0: enabling device (0000 -> 0002)
+Nov 12 21:28:30 p2016176 kernel: idma64 idma64.0: Found Intel integrated DMA 64-bit
+Nov 12 21:28:30 p2016176 kernel: tpm_crb MSFT0101:00: [Firmware Bug]: Bad ACPI memory layout
+Nov 12 21:28:30 p2016176 kernel: input: PC Speaker as /devices/platform/pcspkr/input/input5
+Nov 12 21:28:30 p2016176 kernel: RAPL PMU: API unit is 2^-32 Joules, 5 fixed counters, 655360 ms ovfl timer
+Nov 12 21:28:30 p2016176 kernel: RAPL PMU: hw unit of domain pp0-core 2^-14 Joules
+Nov 12 21:28:30 p2016176 kernel: RAPL PMU: hw unit of domain package 2^-14 Joules
+Nov 12 21:28:30 p2016176 kernel: RAPL PMU: hw unit of domain dram 2^-14 Joules
+Nov 12 21:28:30 p2016176 kernel: RAPL PMU: hw unit of domain pp1-gpu 2^-14 Joules
+Nov 12 21:28:30 p2016176 kernel: RAPL PMU: hw unit of domain psys 2^-14 Joules
+Nov 12 21:28:30 p2016176 kernel: Linux agpgart interface v0.103
+Nov 12 21:28:30 p2016176 kernel: input: SYN1B81:01 06CB:7406 Mouse as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1/i2c-SYN1B81:01/0018:06CB:7406.0001/input/input6
+Nov 12 21:28:30 p2016176 kernel: input: SYN1B81:01 06CB:7406 Touchpad as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1/i2c-SYN1B81:01/0018:06CB:7406.0001/input/input7
+Nov 12 21:28:30 p2016176 kernel: hid-generic 0018:06CB:7406.0001: input,hidraw0: I2C HID v1.00 Mouse [SYN1B81:01 06CB:7406] on i2c-SYN1B81:01
+Nov 12 21:28:30 p2016176 kernel: r8169 0000:02:00.0: can't disable ASPM; OS doesn't have ASPM control
+Nov 12 21:28:30 p2016176 kernel: libphy: r8169: probed
+Nov 12 21:28:30 p2016176 kernel: r8169 0000:02:00.0 eth0: RTL8168h/8111h, 54:ab:3a:1e:76:02, XID 541, IRQ 128
+Nov 12 21:28:30 p2016176 kernel: r8169 0000:02:00.0 eth0: jumbo features [frames: 9194 bytes, tx checksumming: ko]
+Nov 12 21:28:30 p2016176 kernel: mc: Linux media interface: v0.10
+Nov 12 21:28:30 p2016176 kernel: cryptd: max_cpu_qlen set to 1000
+Nov 12 21:28:30 p2016176 kernel: AVX2 version of gcm_enc/dec engaged.
+Nov 12 21:28:30 p2016176 kernel: AES CTR mode by8 optimization enabled
+Nov 12 21:28:30 p2016176 kernel: videodev: Linux video capture interface: v2.00
+Nov 12 21:28:30 p2016176 kernel: Bluetooth: Core ver 2.22
+Nov 12 21:28:30 p2016176 kernel: NET: Registered PF_BLUETOOTH protocol family
+Nov 12 21:28:30 p2016176 kernel: Bluetooth: HCI device and connection manager initialized
+Nov 12 21:28:30 p2016176 kernel: Bluetooth: HCI socket layer initialized
+Nov 12 21:28:30 p2016176 kernel: Bluetooth: L2CAP socket layer initialized
+Nov 12 21:28:30 p2016176 kernel: Bluetooth: SCO socket layer initialized
+Nov 12 21:28:30 p2016176 kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Nov 12 21:28:30 p2016176 kernel: cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Nov 12 21:28:30 p2016176 kernel: platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+Nov 12 21:28:30 p2016176 kernel: cfg80211: failed to load regulatory.db
+Nov 12 21:28:30 p2016176 kernel: usbcore: registered new interface driver btusb
+Nov 12 21:28:30 p2016176 kernel: usb 1-7: Found UVC 1.00 device HD WebCam (04f2:b526)
+Nov 12 21:28:30 p2016176 kernel: acer_wmi: Acer Laptop ACPI-WMI Extras
+Nov 12 21:28:30 p2016176 kernel: acer_wmi: Function bitmap for Communication Button: 0x801
+Nov 12 21:28:30 p2016176 kernel: input: Acer WMI hotkeys as /devices/virtual/input/input9
+Nov 12 21:28:30 p2016176 kernel: input: HD WebCam: HD WebCam as /devices/pci0000:00/0000:00:14.0/usb1/1-7/1-7:1.0/input/input10
+Nov 12 21:28:30 p2016176 kernel: usbcore: registered new interface driver uvcvideo
+Nov 12 21:28:30 p2016176 kernel: r8169 0000:02:00.0 enp2s0: renamed from eth0
+Nov 12 21:28:30 p2016176 kernel: input: SYN1B81:01 06CB:7406 Mouse as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1/i2c-SYN1B81:01/0018:06CB:7406.0001/input/input11
+Nov 12 21:28:30 p2016176 kernel: input: SYN1B81:01 06CB:7406 Touchpad as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1/i2c-SYN1B81:01/0018:06CB:7406.0001/input/input12
+Nov 12 21:28:30 p2016176 kernel: hid-multitouch 0018:06CB:7406.0001: input,hidraw0: I2C HID v1.00 Mouse [SYN1B81:01 06CB:7406] on i2c-SYN1B81:01
+Nov 12 21:28:30 p2016176 kernel: at24 0-0050: supply vcc not found, using dummy regulator
+Nov 12 21:28:30 p2016176 kernel: at24 0-0050: 256 byte spd EEPROM, read-only
+Nov 12 21:28:30 p2016176 kernel: checking generic (a0000000 7f0000) vs hw (92000000 1000000)
+Nov 12 21:28:30 p2016176 kernel: checking generic (a0000000 7f0000) vs hw (a0000000 10000000)
+Nov 12 21:28:30 p2016176 kernel: fb0: switching to inteldrmfb from EFI VGA
+Nov 12 21:28:30 p2016176 kernel: Console: switching to colour dummy device 80x25
+Nov 12 21:28:30 p2016176 kernel: i915 0000:00:02.0: vgaarb: deactivate vga console
+Nov 12 21:28:30 p2016176 kernel: i915 0000:00:02.0: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=io+mem:owns=io+mem
+Nov 12 21:28:30 p2016176 kernel: [drm] Initialized i915 1.6.0 20201103 for 0000:00:02.0 on minor 0
+Nov 12 21:28:30 p2016176 kernel: ACPI: video: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+Nov 12 21:28:30 p2016176 kernel: input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input14
+Nov 12 21:28:30 p2016176 kernel: ACPI: video: [Firmware Bug]: ACPI(PXSX) defines _DOD but not _DOS
+Nov 12 21:28:30 p2016176 kernel: ACPI: video: Video Device [PXSX] (multi-head: yes  rom: yes  post: no)
+Nov 12 21:28:30 p2016176 kernel: input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:32/LNXVIDEO:01/input/input15
+Nov 12 21:28:30 p2016176 kernel: snd_hda_intel 0000:00:1f.3: bound 0000:00:02.0 (ops i915_audio_component_bind_ops [i915])
+Nov 12 21:28:30 p2016176 kernel: fbcon: i915 (fb0) is primary device
+Nov 12 21:28:30 p2016176 kernel: Console: switching to colour frame buffer device 240x67
+Nov 12 21:28:30 p2016176 kernel: i915 0000:00:02.0: [drm] fb0: i915 frame buffer device
+Nov 12 21:28:30 p2016176 kernel: mousedev: PS/2 mouse device common for all mice
+Nov 12 21:28:30 p2016176 kernel: iTCO_vendor_support: vendor-support=0
+Nov 12 21:28:30 p2016176 kernel: ath10k_pci 0000:03:00.0: pci irq msi oper_irq_mode 2 irq_mode 0 reset_mode 0
+Nov 12 21:28:30 p2016176 kernel: pcieport 0000:00:1c.5: AER: Multiple Corrected error received: 0000:00:1c.5
+Nov 12 21:28:30 p2016176 kernel: pcieport 0000:00:1c.5: PCIe Bus Error: severity=Corrected, type=Physical Layer, (Receiver ID)
+Nov 12 21:28:30 p2016176 kernel: pcieport 0000:00:1c.5:   device [8086:9d15] error status/mask=00000001/00002000
+Nov 12 21:28:30 p2016176 kernel: pcieport 0000:00:1c.5:    [ 0] RxErr                  (First)
+Nov 12 21:28:30 p2016176 kernel: pcieport 0000:00:1c.5: AER: Multiple Corrected error received: 0000:00:1c.5
+Nov 12 21:28:30 p2016176 kernel: pcieport 0000:00:1c.5: AER: can't find device of ID00e5
+Nov 12 21:28:30 p2016176 kernel: pcieport 0000:00:1c.5: AER: Multiple Corrected error received: 0000:00:1c.5
+Nov 12 21:28:30 p2016176 kernel: pcieport 0000:00:1c.5: PCIe Bus Error: severity=Corrected, type=Physical Layer, (Receiver ID)
+Nov 12 21:28:30 p2016176 kernel: pcieport 0000:00:1c.5:   device [8086:9d15] error status/mask=00000001/00002000
+Nov 12 21:28:30 p2016176 kernel: pcieport 0000:00:1c.5:    [ 0] RxErr                  (First)
+Nov 12 21:28:30 p2016176 kernel: i915 0000:00:02.0: [drm] Finished loading DMC firmware i915/skl_dmc_ver1_27.bin (v1.27)
+Nov 12 21:28:30 p2016176 kernel: iTCO_wdt iTCO_wdt: Found a Intel PCH TCO device (Version=4, TCOBASE=0x0400)
+Nov 12 21:28:30 p2016176 kernel: iTCO_wdt iTCO_wdt: initialized. heartbeat=30 sec (nowayout=0)
+Nov 12 21:28:30 p2016176 kernel: snd_hda_codec_realtek hdaudioC0D0: autoconfig for ALC255: line_outs=1 (0x14/0x0/0x0/0x0/0x0) type:speaker
+Nov 12 21:28:30 p2016176 kernel: snd_hda_codec_realtek hdaudioC0D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+Nov 12 21:28:30 p2016176 kernel: snd_hda_codec_realtek hdaudioC0D0:    hp_outs=1 (0x21/0x0/0x0/0x0/0x0)
+Nov 12 21:28:30 p2016176 kernel: snd_hda_codec_realtek hdaudioC0D0:    mono: mono_out=0x0
+Nov 12 21:28:30 p2016176 kernel: snd_hda_codec_realtek hdaudioC0D0:    inputs:
+Nov 12 21:28:30 p2016176 kernel: snd_hda_codec_realtek hdaudioC0D0:      Mic=0x12
+Nov 12 21:28:30 p2016176 kernel: ath10k_pci 0000:03:00.0: qca9377 hw1.0 target 0x05020000 chip_id 0x003820ff sub 105b:e09a
+Nov 12 21:28:30 p2016176 kernel: ath10k_pci 0000:03:00.0: kconfig debug 1 debugfs 1 tracing 1 dfs 0 testmode 0
+Nov 12 21:28:30 p2016176 kernel: ath10k_pci 0000:03:00.0: firmware ver WLAN.TF.2.1-00021-QCARMSWP-1 api 6 features wowlan,ignore-otp crc32 42e41877
+Nov 12 21:28:30 p2016176 kernel: Adding 2097148k swap on /dev/sda2.  Priority:-2 extents:1 across:2097148k FS
+Nov 12 21:28:30 p2016176 kernel: input: HDA Intel PCH Front Headphone as /devices/pci0000:00/0000:00:1f.3/sound/card0/input16
+Nov 12 21:28:30 p2016176 kernel: input: HDA Intel PCH HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input17
+Nov 12 21:28:30 p2016176 kernel: input: HDA Intel PCH HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input18
+Nov 12 21:28:30 p2016176 kernel: input: HDA Intel PCH HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input19
+Nov 12 21:28:30 p2016176 kernel: input: HDA Intel PCH HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input20
+Nov 12 21:28:30 p2016176 kernel: input: HDA Intel PCH HDMI/DP,pcm=10 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input21
+Nov 12 21:28:30 p2016176 kernel: ath10k_pci 0000:03:00.0: board_file api 2 bmi_id N/A crc32 8aedfa4a
+Nov 12 21:28:30 p2016176 kernel: intel_tcc_cooling: Programmable TCC Offset detected
+Nov 12 21:28:30 p2016176 kernel: intel_rapl_common: Found RAPL domain package
+Nov 12 21:28:30 p2016176 kernel: intel_rapl_common: Found RAPL domain core
+Nov 12 21:28:30 p2016176 kernel: intel_rapl_common: Found RAPL domain uncore
+Nov 12 21:28:30 p2016176 kernel: intel_rapl_common: Found RAPL domain dram
+Nov 12 21:28:30 p2016176 kernel: intel_rapl_common: Found RAPL domain psys
+Nov 12 21:28:30 p2016176 kernel: audit: type=1130 audit(1636745302.275:12): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-backlight@backlight:intel_backlight comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:30 p2016176 kernel: audit: type=1130 audit(1636745302.695:13): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-rfkill comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:30 p2016176 kernel: ath10k_pci 0000:03:00.0: htt-ver 3.56 wmi-op 4 htt-op 3 cal otp max-sta 32 raw 0 hwcrypto 1
+Nov 12 21:28:30 p2016176 kernel: ath: EEPROM regdomain: 0x6c
+Nov 12 21:28:30 p2016176 kernel: ath: EEPROM indicates we should expect a direct regpair map
+Nov 12 21:28:30 p2016176 kernel: ath: Country alpha2 being used: 00
+Nov 12 21:28:30 p2016176 kernel: ath: Regpair used: 0x6c
+Nov 12 21:28:30 p2016176 kernel: ath10k_pci 0000:03:00.0 wlp3s0: renamed from wlan0
+Nov 12 21:28:30 p2016176 kernel: audit: type=1130 audit(1636745304.792:14): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=ldconfig comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:30 p2016176 kernel: nvidia: loading out-of-tree module taints kernel.
+Nov 12 21:28:30 p2016176 kernel: nvidia: module license 'NVIDIA' taints kernel.
+Nov 12 21:28:30 p2016176 kernel: Disabling lock debugging due to kernel taint
+Nov 12 21:28:30 p2016176 kernel: nvidia: module verification failed: signature and/or required key missing - tainting kernel
+Nov 12 21:28:30 p2016176 kernel: nvidia-nvlink: Nvlink Core is being initialized, major device number 510
+Nov 12 21:28:30 p2016176 kernel: 
+Nov 12 21:28:30 p2016176 kernel: nvidia 0000:01:00.0: enabling device (0406 -> 0407)
+Nov 12 21:28:30 p2016176 kernel: audit: type=1131 audit(1636745309.408:15): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-rfkill comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:30 p2016176 kernel: NVRM: loading NVIDIA UNIX x86_64 Kernel Module  495.44  Fri Oct 22 06:13:12 UTC 2021
+Nov 12 21:28:30 p2016176 kernel: nvidia-modeset: Loading NVIDIA Kernel Mode Setting Driver for UNIX platforms  495.44  Fri Oct 22 06:05:22 UTC 2021
+Nov 12 21:28:30 p2016176 kernel: [drm] [nvidia-drm] [GPU ID 0x00000100] Loading driver
+Nov 12 21:28:30 p2016176 kernel: [drm] Initialized nvidia-drm 0.0.0 20160202 for 0000:01:00.0 on minor 1
+Nov 12 21:28:15 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-random-seed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:15 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-sysusers comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:30 p2016176 kernel: audit: type=1130 audit(1636745310.682:16): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journal-flush comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:16 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-setup-dev comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:16 p2016176 audit: BPF prog-id=14 op=LOAD
+Nov 12 21:28:17 p2016176 audit: BPF prog-id=15 op=LOAD
+Nov 12 21:28:17 p2016176 audit: BPF prog-id=16 op=LOAD
+Nov 12 21:28:18 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-udevd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:22 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-backlight@backlight:intel_backlight comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:22 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-rfkill comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:24 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=ldconfig comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:29 p2016176 audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-rfkill comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:30 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journal-flush comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:15 p2016176 systemd[1]: Finished Load/Save Random Seed.
+Nov 12 21:28:15 p2016176 systemd[1]: Condition check resulted in First Boot Complete being skipped.
+Nov 12 21:28:15 p2016176 systemd[1]: Finished Create System Users.
+Nov 12 21:28:15 p2016176 systemd[1]: Starting Create Static Device Nodes in /dev...
+Nov 12 21:28:16 p2016176 systemd[1]: Finished Create Static Device Nodes in /dev.
+Nov 12 21:28:16 p2016176 systemd[1]: Reached target Preparation for Local File Systems.
+Nov 12 21:28:16 p2016176 systemd[1]: Condition check resulted in Virtual Machine and Container Storage (Compatibility) being skipped.
+Nov 12 21:28:16 p2016176 systemd[1]: Mounting Mount unit for bare, revision 5...
+Nov 12 21:28:31 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-setup comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:31 p2016176 kernel: audit: type=1130 audit(1636745311.075:17): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-setup comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:16 p2016176 systemd[1]: Mounting Mount unit for core18, revision 2246...
+Nov 12 21:28:16 p2016176 systemd[1]: Mounting Mount unit for gtk-common-themes, revision 1519...
+Nov 12 21:28:16 p2016176 systemd[1]: Mounting Mount unit for kde-frameworks-5-core18, revision 32...
+Nov 12 21:28:31 p2016176 kernel: audit: type=1127 audit(1636745311.112:18): pid=365 uid=0 auid=4294967295 ses=4294967295 msg=' comm="systemd-update-utmp" exe="/usr/lib/systemd/systemd-update-utmp" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:31 p2016176 audit[365]: SYSTEM_BOOT pid=365 uid=0 auid=4294967295 ses=4294967295 msg=' comm="systemd-update-utmp" exe="/usr/lib/systemd/systemd-update-utmp" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:16 p2016176 systemd[1]: Mounting Mount unit for ksnip, revision 386...
+Nov 12 21:28:31 p2016176 kernel: audit: type=1130 audit(1636745311.205:19): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-update-utmp comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:31 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-update-utmp comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:16 p2016176 systemd[1]: Mounting Mount unit for snapd, revision 13640...
+Nov 12 21:28:17 p2016176 systemd[1]: Starting Rule-based Manager for Device Events and Files...
+Nov 12 21:28:17 p2016176 systemd[1]: Mounted Mount unit for ksnip, revision 386.
+Nov 12 21:28:17 p2016176 systemd[1]: Mounted Mount unit for core18, revision 2246.
+Nov 12 21:28:17 p2016176 systemd[1]: Mounted Mount unit for snapd, revision 13640.
+Nov 12 21:28:17 p2016176 systemd[1]: Mounted Mount unit for bare, revision 5.
+Nov 12 21:28:17 p2016176 systemd[1]: Mounted Mount unit for kde-frameworks-5-core18, revision 32.
+Nov 12 21:28:17 p2016176 systemd[1]: Mounted Mount unit for gtk-common-themes, revision 1519.
+Nov 12 21:28:18 p2016176 systemd[1]: Started Rule-based Manager for Device Events and Files.
+Nov 12 21:28:20 p2016176 systemd[1]: Found device HGST_HTS545050A7E380 2.
+Nov 12 21:28:20 p2016176 systemd[1]: Activating swap /dev/disk/by-uuid/726bbf4d-199f-4ed9-a7e2-81251adda44f...
+Nov 12 21:28:20 p2016176 systemd-udevd[254]: Using default interface naming scheme 'v249'.
+Nov 12 21:28:20 p2016176 systemd-udevd[241]: Using default interface naming scheme 'v249'.
+Nov 12 21:28:21 p2016176 systemd[1]: Reached target Bluetooth Support.
+Nov 12 21:28:31 p2016176 kernel: audit: type=1130 audit(1636745311.348:20): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journal-catalog-update comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:31 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journal-catalog-update comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:31 p2016176 kernel: audit: type=1130 audit(1636745311.402:21): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-update-done comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:31 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-update-done comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:21 p2016176 systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Nov 12 21:28:21 p2016176 systemd[1]: Starting Load/Save RF Kill Switch Status...
+Nov 12 21:28:21 p2016176 systemd-udevd[249]: card0: Process '/usr/lib/snapd/snap-device-helper add snap_ksnip_ksnip /devices/pci0000:00/0000:00:02.0/drm/card0 226:0' failed with exit code 1.
+Nov 12 21:28:21 p2016176 systemd-udevd[239]: renderD128: Process '/usr/lib/snapd/snap-device-helper add snap_ksnip_ksnip /devices/pci0000:00/0000:00:02.0/drm/renderD128 226:128' failed with exit code 1.
+Nov 12 21:28:21 p2016176 systemd-udevd[236]: card0-eDP-1: Process '/usr/lib/snapd/snap-device-helper add snap_ksnip_ksnip /devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1 0:0' failed with exit code 1.
+Nov 12 21:28:21 p2016176 systemd-udevd[236]: card0: Process '/usr/lib/snapd/snap-device-helper change snap_ksnip_ksnip /devices/pci0000:00/0000:00:02.0/drm/card0 226:0' failed with exit code 1.
+Nov 12 21:28:21 p2016176 systemd-udevd[236]: card0-HDMI-A-1: Process '/usr/lib/snapd/snap-device-helper add snap_ksnip_ksnip /devices/pci0000:00/0000:00:02.0/drm/card0/card0-HDMI-A-1 0:0' failed with exit code 1.
+Nov 12 21:28:21 p2016176 systemd-udevd[236]: card0: Process '/usr/lib/snapd/snap-device-helper change snap_ksnip_ksnip /devices/pci0000:00/0000:00:02.0/drm/card0 226:0' failed with exit code 1.
+Nov 12 21:28:21 p2016176 systemd-udevd[236]: card0-DP-1: Process '/usr/lib/snapd/snap-device-helper add snap_ksnip_ksnip /devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1 0:0' failed with exit code 1.
+Nov 12 21:28:21 p2016176 systemd-udevd[236]: card0: Process '/usr/lib/snapd/snap-device-helper change snap_ksnip_ksnip /devices/pci0000:00/0000:00:02.0/drm/card0 226:0' failed with exit code 1.
+Nov 12 21:28:21 p2016176 systemd-udevd[236]: card0: Process '/usr/lib/snapd/snap-device-helper change snap_ksnip_ksnip /devices/pci0000:00/0000:00:02.0/drm/card0 226:0' failed with exit code 1.
+Nov 12 21:28:21 p2016176 systemd-udevd[236]: card0: Process '/usr/lib/snapd/snap-device-helper change snap_ksnip_ksnip /devices/pci0000:00/0000:00:02.0/drm/card0 226:0' failed with exit code 1.
+Nov 12 21:28:21 p2016176 systemd[1]: Created slice Slice /system/systemd-backlight.
+Nov 12 21:28:21 p2016176 systemd[1]: Starting Load/Save Screen Backlight Brightness of backlight:intel_backlight...
+Nov 12 21:28:31 p2016176 kernel: audit: type=1130 audit(1636745311.432:22): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=dbus comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:31 p2016176 kernel: audit: type=1334 audit(1636745311.438:23): prog-id=17 op=LOAD
+Nov 12 21:28:31 p2016176 kernel: audit: type=1334 audit(1636745311.442:24): prog-id=18 op=LOAD
+Nov 12 21:28:31 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=dbus comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:31 p2016176 audit: BPF prog-id=17 op=LOAD
+Nov 12 21:28:31 p2016176 audit: BPF prog-id=18 op=LOAD
+Nov 12 21:28:31 p2016176 audit: BPF prog-id=19 op=LOAD
+Nov 12 21:28:31 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=alsa-restore comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:31 p2016176 alsactl[368]: alsa-lib parser.c:242:(error_node) UCM is not supported for this HDA model (HDA Intel PCH at 0x94320000 irq 130)
+Nov 12 21:28:31 p2016176 alsactl[368]: alsa-lib main.c:1405:(snd_use_case_mgr_open) error: failed to import hw:0 use case configuration -6
+Nov 12 21:28:22 p2016176 systemd[1]: Activated swap /dev/disk/by-uuid/726bbf4d-199f-4ed9-a7e2-81251adda44f.
+Nov 12 21:28:22 p2016176 systemd[1]: Reached target Swaps.
+Nov 12 21:28:22 p2016176 systemd[1]: Mounting Temporary Directory /tmp...
+Nov 12 21:28:22 p2016176 systemd[1]: Mounted Temporary Directory /tmp.
+Nov 12 21:28:22 p2016176 systemd[1]: Reached target Local File Systems.
+Nov 12 21:28:22 p2016176 systemd[1]: Starting Rebuild Dynamic Linker Cache...
+Nov 12 21:28:22 p2016176 systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+Nov 12 21:28:22 p2016176 systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+Nov 12 21:28:22 p2016176 systemd[1]: Finished Load/Save Screen Backlight Brightness of backlight:intel_backlight.
+Nov 12 21:28:22 p2016176 systemd[1]: Started Load/Save RF Kill Switch Status.
+Nov 12 21:28:23 p2016176 systemd-udevd[249]: controlC0: Process '/usr/bin/alsactl restore 0' failed with exit code 99.
+Nov 12 21:28:23 p2016176 systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+Nov 12 21:28:23 p2016176 systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+Nov 12 21:28:23 p2016176 systemd[1]: Condition check resulted in First Boot Wizard being skipped.
+Nov 12 21:28:23 p2016176 systemd[1]: Condition check resulted in First Boot Complete being skipped.
+Nov 12 21:28:23 p2016176 systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+Nov 12 21:28:23 p2016176 systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+Nov 12 21:28:23 p2016176 systemd[1]: Condition check resulted in Load Kernel Modules being skipped.
+Nov 12 21:28:23 p2016176 systemd[1]: Condition check resulted in Repartition Root Disk being skipped.
+Nov 12 21:28:24 p2016176 systemd-udevd[245]: Using default interface naming scheme 'v249'.
+Nov 12 21:28:24 p2016176 systemd-udevd[255]: Using default interface naming scheme 'v249'.
+Nov 12 21:28:24 p2016176 systemd[1]: Finished Rebuild Dynamic Linker Cache.
+Nov 12 21:28:29 p2016176 systemd[1]: systemd-rfkill.service: Deactivated successfully.
+Nov 12 21:28:29 p2016176 systemd-udevd[236]: renderD129: Process '/usr/lib/snapd/snap-device-helper add snap_ksnip_ksnip /devices/pci0000:00/0000:00:1c.0/0000:01:00.0/drm/renderD129 226:129' failed with exit code 1.
+Nov 12 21:28:29 p2016176 systemd-udevd[245]: card1: Process '/usr/lib/snapd/snap-device-helper add snap_ksnip_ksnip /devices/pci0000:00/0000:00:1c.0/0000:01:00.0/drm/card1 226:1' failed with exit code 1.
+Nov 12 21:28:30 p2016176 systemd[1]: Finished Flush Journal to Persistent Storage.
+Nov 12 21:28:30 p2016176 systemd[1]: Starting Create Volatile Files and Directories...
+Nov 12 21:28:31 p2016176 systemd[1]: Finished Create Volatile Files and Directories.
+Nov 12 21:28:31 p2016176 systemd[1]: Starting Rebuild Journal Catalog...
+Nov 12 21:28:31 p2016176 systemd[1]: Starting Record System Boot/Shutdown in UTMP...
+Nov 12 21:28:31 p2016176 systemd[1]: Finished Record System Boot/Shutdown in UTMP.
+Nov 12 21:28:31 p2016176 systemd[1]: Finished Rebuild Journal Catalog.
+Nov 12 21:28:31 p2016176 systemd[1]: Starting Update is Completed...
+Nov 12 21:28:31 p2016176 systemd[1]: Finished Update is Completed.
+Nov 12 21:28:31 p2016176 systemd[1]: Reached target System Initialization.
+Nov 12 21:28:31 p2016176 systemd[1]: Started Daily man-db regeneration.
+Nov 12 21:28:31 p2016176 systemd[1]: Started Daily verification of password and group files.
+Nov 12 21:28:31 p2016176 systemd[1]: Started Daily Cleanup of Temporary Directories.
+Nov 12 21:28:31 p2016176 systemd[1]: Reached target Timer Units.
+Nov 12 21:28:31 p2016176 systemd[1]: Listening on D-Bus System Message Bus Socket.
+Nov 12 21:28:31 p2016176 systemd[1]: Starting Socket activation for snappy daemon...
+Nov 12 21:28:31 p2016176 systemd[1]: Listening on Socket activation for snappy daemon.
+Nov 12 21:28:31 p2016176 systemd[1]: Reached target Socket Units.
+Nov 12 21:28:31 p2016176 systemd[1]: Reached target Basic System.
+Nov 12 21:28:31 p2016176 systemd[1]: Starting Save/Restore Sound Card State...
+Nov 12 21:28:31 p2016176 systemd[1]: Condition check resulted in Manage Sound Card State (restore and store) being skipped.
+Nov 12 21:28:31 p2016176 systemd[1]: Started D-Bus System Message Bus.
+Nov 12 21:28:31 p2016176 systemd[1]: Starting Network Manager...
+Nov 12 21:28:31 p2016176 systemd[1]: Starting User Login Management...
+Nov 12 21:28:31 p2016176 systemd[1]: Finished Save/Restore Sound Card State.
+Nov 12 21:28:31 p2016176 systemd[1]: Reached target Sound Card.
+Nov 12 21:28:31 p2016176 systemd-logind[371]: New seat seat0.
+Nov 12 21:28:31 p2016176 systemd-logind[371]: Watching system buttons on /dev/input/event3 (Power Button)
+Nov 12 21:28:31 p2016176 systemd-logind[371]: Watching system buttons on /dev/input/event0 (Power Button)
+Nov 12 21:28:31 p2016176 systemd-logind[371]: Watching system buttons on /dev/input/event2 (Lid Switch)
+Nov 12 21:28:31 p2016176 systemd-logind[371]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Nov 12 21:28:31 p2016176 systemd-logind[371]: Watching system buttons on /dev/input/event4 (AT Translated Set 2 keyboard)
+Nov 12 21:28:31 p2016176 systemd-logind[371]: Watching system buttons on /dev/input/event8 (Acer WMI hotkeys)
+Nov 12 21:28:32 p2016176 systemd[1]: Started User Login Management.
+Nov 12 21:28:32 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-logind comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:32 p2016176 NetworkManager[370]: <info>  [1636745312.9846] NetworkManager (version 1.32.12-1) is starting... (for the first time)
+Nov 12 21:28:33 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:32 p2016176 NetworkManager[370]: <info>  [1636745312.9849] Read config: /etc/NetworkManager/NetworkManager.conf (lib: 20-connectivity.conf)
+Nov 12 21:28:33 p2016176 systemd[1]: Started Network Manager.
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.0978] bus-manager: acquired D-Bus service "org.freedesktop.NetworkManager"
+Nov 12 21:28:33 p2016176 systemd[1]: Reached target Network.
+Nov 12 21:28:33 p2016176 systemd[1]: Starting Permit User Sessions...
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.1670] manager[0x55ba4ee73040]: monitoring kernel firmware directory '/lib/firmware'.
+Nov 12 21:28:33 p2016176 systemd[1]: Finished Permit User Sessions.
+Nov 12 21:28:33 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-user-sessions comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:33 p2016176 systemd[1]: Started Getty on tty1.
+Nov 12 21:28:33 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=getty@tty1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:33 p2016176 systemd[1]: Reached target Login Prompts.
+Nov 12 21:28:33 p2016176 systemd[1]: Reached target Multi-User System.
+Nov 12 21:28:33 p2016176 dbus-daemon[369]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.2' (uid=0 pid=370 comm="/usr/bin/NetworkManager --no-daemon ")
+Nov 12 21:28:33 p2016176 audit: BPF prog-id=20 op=LOAD
+Nov 12 21:28:33 p2016176 audit: BPF prog-id=21 op=LOAD
+Nov 12 21:28:33 p2016176 audit: BPF prog-id=22 op=LOAD
+Nov 12 21:28:33 p2016176 systemd[1]: Reached target Graphical Interface.
+Nov 12 21:28:33 p2016176 systemd[1]: Startup finished in 7.275s (firmware) + 2.405s (loader) + 5.519s (kernel) + 20.507s (userspace) = 35.708s.
+Nov 12 21:28:33 p2016176 systemd[1]: Starting Hostname Service...
+Nov 12 21:28:33 p2016176 dbus-daemon[369]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Nov 12 21:28:33 p2016176 systemd[1]: Started Hostname Service.
+Nov 12 21:28:33 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-hostnamed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.3809] hostname: hostname: using hostnamed
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.3809] hostname: hostname changed from (none) to "p2016176"
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.3818] dns-mgr[0x55ba4ee54250]: init: dns=default,systemd-resolved rc-manager=symlink
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.3843] rfkill3: found Wi-Fi radio killswitch (at /sys/devices/pci0000:00/0000:00:1c.5/0000:03:00.0/ieee80211/phy0/rfkill3) (driver ath10k_pci)
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.3848] rfkill1: found Wi-Fi radio killswitch (at /sys/devices/platform/acer-wmi/rfkill/rfkill1) (platform driver acer-wmi)
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.4175] manager[0x55ba4ee73040]: rfkill: Wi-Fi hardware radio set enabled
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.4176] manager[0x55ba4ee73040]: rfkill: WWAN hardware radio set enabled
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.5831] Loaded device plugin: NMAtmManager (/usr/lib/NetworkManager/1.32.12-1/libnm-device-plugin-adsl.so)
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.6216] Loaded device plugin: NMBluezManager (/usr/lib/NetworkManager/1.32.12-1/libnm-device-plugin-bluetooth.so)
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.6233] Loaded device plugin: NMWwanFactory (/usr/lib/NetworkManager/1.32.12-1/libnm-device-plugin-wwan.so)
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.7703] Loaded device plugin: NMTeamFactory (/usr/lib/NetworkManager/1.32.12-1/libnm-device-plugin-team.so)
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.8004] Loaded device plugin: NMWifiFactory (/usr/lib/NetworkManager/1.32.12-1/libnm-device-plugin-wifi.so)
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.8029] Loaded device plugin: NMOvsFactory (/usr/lib/NetworkManager/1.32.12-1/libnm-device-plugin-ovs.so)
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.8041] manager: rfkill: Wi-Fi enabled by radio killswitch; enabled by state file
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.8044] manager: rfkill: WWAN enabled by radio killswitch; enabled by state file
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.8047] manager: Networking is enabled by state file
+Nov 12 21:28:33 p2016176 dbus-daemon[369]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.2' (uid=0 pid=370 comm="/usr/bin/NetworkManager --no-daemon ")
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.8220] dhcp-init: Using DHCP client 'internal'
+Nov 12 21:28:33 p2016176 systemd[1]: Starting Network Manager Script Dispatcher Service...
+Nov 12 21:28:33 p2016176 NetworkManager[370]: <info>  [1636745313.8907] settings: Loaded settings plugin: keyfile (internal)
+Nov 12 21:28:34 p2016176 NetworkManager[370]: <info>  [1636745314.0339] device (lo): carrier: link connected
+Nov 12 21:28:34 p2016176 NetworkManager[370]: <info>  [1636745314.0344] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+Nov 12 21:28:34 p2016176 NetworkManager[370]: <info>  [1636745314.0385] manager: (enp2s0): new Ethernet device (/org/freedesktop/NetworkManager/Devices/2)
+Nov 12 21:28:34 p2016176 NetworkManager[370]: <info>  [1636745314.0409] settings: (enp2s0): created default wired connection 'Wired connection 1'
+Nov 12 21:28:34 p2016176 NetworkManager[370]: <info>  [1636745314.0419] device (enp2s0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Nov 12 21:28:34 p2016176 dbus-daemon[369]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Nov 12 21:28:34 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:34 p2016176 systemd[1]: Started Network Manager Script Dispatcher Service.
+Nov 12 21:28:34 p2016176 kernel: Generic FE-GE Realtek PHY r8169-0-200:00: attached PHY driver (mii_bus:phy_addr=r8169-0-200:00, irq=MAC)
+Nov 12 21:28:34 p2016176 kernel: r8169 0000:02:00.0 enp2s0: Link is Down
+Nov 12 21:28:34 p2016176 NetworkManager[370]: <info>  [1636745314.3405] device (wlp3s0): driver supports Access Point (AP) mode
+Nov 12 21:28:34 p2016176 NetworkManager[370]: <info>  [1636745314.3429] manager: (wlp3s0): new 802.11 Wi-Fi device (/org/freedesktop/NetworkManager/Devices/3)
+Nov 12 21:28:34 p2016176 NetworkManager[370]: <info>  [1636745314.3458] device (wlp3s0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Nov 12 21:28:34 p2016176 kernel: pcieport 0000:00:1c.5: AER: Multiple Corrected error received: 0000:00:1c.5
+Nov 12 21:28:34 p2016176 kernel: pcieport 0000:00:1c.5: PCIe Bus Error: severity=Corrected, type=Physical Layer, (Receiver ID)
+Nov 12 21:28:34 p2016176 kernel: pcieport 0000:00:1c.5:   device [8086:9d15] error status/mask=00000001/00002000
+Nov 12 21:28:34 p2016176 kernel: pcieport 0000:00:1c.5:    [ 0] RxErr                  (First)
+Nov 12 21:28:34 p2016176 kernel: pcieport 0000:00:1c.5: AER: Multiple Corrected error received: 0000:00:1c.5
+Nov 12 21:28:34 p2016176 kernel: pcieport 0000:00:1c.5: PCIe Bus Error: severity=Corrected, type=Physical Layer, (Receiver ID)
+Nov 12 21:28:34 p2016176 kernel: pcieport 0000:00:1c.5:   device [8086:9d15] error status/mask=00000001/00002000
+Nov 12 21:28:34 p2016176 kernel: pcieport 0000:00:1c.5:    [ 0] RxErr                  (First)
+Nov 12 21:28:36 p2016176 NetworkManager[370]: <info>  [1636745316.7472] device (wlp3s0): set-hw-addr: set MAC address to 3E:1E:DB:27:4A:F1 (scanning)
+Nov 12 21:28:36 p2016176 kernel: pcieport 0000:00:1c.5: AER: Multiple Corrected error received: 0000:00:1c.5
+Nov 12 21:28:36 p2016176 kernel: pcieport 0000:00:1c.5: PCIe Bus Error: severity=Corrected, type=Physical Layer, (Receiver ID)
+Nov 12 21:28:36 p2016176 kernel: pcieport 0000:00:1c.5:   device [8086:9d15] error status/mask=00000001/00002000
+Nov 12 21:28:36 p2016176 kernel: pcieport 0000:00:1c.5:    [ 0] RxErr                  (First)
+Nov 12 21:28:37 p2016176 audit[385]: USER_AUTH pid=385 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:authentication grantors=pam_securetty,pam_shells,pam_faillock,pam_permit,pam_faillock acct="tandalos" exe="/usr/bin/login" hostname=p2016176 addr=? terminal=/dev/tty1 res=success'
+Nov 12 21:28:37 p2016176 kernel: kauditd_printk_skb: 11 callbacks suppressed
+Nov 12 21:28:37 p2016176 kernel: audit: type=1100 audit(1636745317.668:36): pid=385 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:authentication grantors=pam_securetty,pam_shells,pam_faillock,pam_permit,pam_faillock acct="tandalos" exe="/usr/bin/login" hostname=p2016176 addr=? terminal=/dev/tty1 res=success'
+Nov 12 21:28:37 p2016176 dbus-daemon[369]: [system] Activating via systemd: service name='org.freedesktop.home1' unit='dbus-org.freedesktop.home1.service' requested by ':1.5' (uid=0 pid=385 comm="/bin/login -p --          ")
+Nov 12 21:28:37 p2016176 dbus-daemon[369]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.home1.service': Unit dbus-org.freedesktop.home1.service not found.
+Nov 12 21:28:37 p2016176 kernel: audit: type=1101 audit(1636745317.755:37): pid=385 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_access,pam_unix,pam_permit,pam_time acct="tandalos" exe="/usr/bin/login" hostname=p2016176 addr=? terminal=/dev/tty1 res=success'
+Nov 12 21:28:37 p2016176 audit[385]: USER_ACCT pid=385 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_access,pam_unix,pam_permit,pam_time acct="tandalos" exe="/usr/bin/login" hostname=p2016176 addr=? terminal=/dev/tty1 res=success'
+Nov 12 21:28:37 p2016176 login[385]: pam_systemd_home(login:account): systemd-homed is not available: Unit dbus-org.freedesktop.home1.service not found.
+Nov 12 21:28:37 p2016176 audit[385]: CRED_ACQ pid=385 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_securetty,pam_shells,pam_faillock,pam_permit,pam_faillock acct="tandalos" exe="/usr/bin/login" hostname=p2016176 addr=? terminal=/dev/tty1 res=success'
+Nov 12 21:28:37 p2016176 audit[385]: SYSCALL arch=c000003e syscall=1 success=yes exit=4 a0=5 a1=7ffd05caddb0 a2=4 a3=3e8 items=0 ppid=1 pid=385 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=tty1 ses=1 comm="login" exe="/usr/bin/login" key=(null)
+Nov 12 21:28:37 p2016176 audit: PROCTITLE proctitle=2F62696E2F6C6F67696E002D70002D2D
+Nov 12 21:28:37 p2016176 login[385]: pam_unix(login:session): session opened for user tandalos(uid=1000) by LOGIN(uid=0)
+Nov 12 21:28:37 p2016176 kernel: audit: type=1103 audit(1636745317.832:38): pid=385 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_securetty,pam_shells,pam_faillock,pam_permit,pam_faillock acct="tandalos" exe="/usr/bin/login" hostname=p2016176 addr=? terminal=/dev/tty1 res=success'
+Nov 12 21:28:37 p2016176 kernel: audit: type=1006 audit(1636745317.832:39): pid=385 uid=0 old-auid=4294967295 auid=1000 tty=tty1 old-ses=4294967295 ses=1 res=1
+Nov 12 21:28:37 p2016176 kernel: audit: type=1300 audit(1636745317.832:39): arch=c000003e syscall=1 success=yes exit=4 a0=5 a1=7ffd05caddb0 a2=4 a3=3e8 items=0 ppid=1 pid=385 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=tty1 ses=1 comm="login" exe="/usr/bin/login" key=(null)
+Nov 12 21:28:37 p2016176 kernel: audit: type=1327 audit(1636745317.832:39): proctitle=2F62696E2F6C6F67696E002D70002D2D
+Nov 12 21:28:37 p2016176 systemd[1]: Created slice User Slice of UID 1000.
+Nov 12 21:28:37 p2016176 systemd[1]: Starting User Runtime Directory /run/user/1000...
+Nov 12 21:28:37 p2016176 systemd-logind[371]: New session 1 of user tandalos.
+Nov 12 21:28:37 p2016176 systemd[1]: Finished User Runtime Directory /run/user/1000.
+Nov 12 21:28:37 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=user-runtime-dir@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:37 p2016176 systemd[1]: Starting User Manager for UID 1000...
+Nov 12 21:28:37 p2016176 kernel: audit: type=1130 audit(1636745317.935:40): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=user-runtime-dir@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:37 p2016176 dbus-daemon[369]: [system] Activating via systemd: service name='org.freedesktop.home1' unit='dbus-org.freedesktop.home1.service' requested by ':1.7' (uid=0 pid=391 comm="(systemd) ")
+Nov 12 21:28:37 p2016176 dbus-daemon[369]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.home1.service': Unit dbus-org.freedesktop.home1.service not found.
+Nov 12 21:28:37 p2016176 systemd[391]: pam_systemd_home(systemd-user:account): systemd-homed is not available: Unit dbus-org.freedesktop.home1.service not found.
+Nov 12 21:28:37 p2016176 audit[391]: USER_ACCT pid=391 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_access,pam_unix,pam_permit,pam_time acct="tandalos" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:37 p2016176 audit[391]: CRED_ACQ pid=391 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=? acct="tandalos" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=failed'
+Nov 12 21:28:37 p2016176 kernel: audit: type=1101 audit(1636745317.978:41): pid=391 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_access,pam_unix,pam_permit,pam_time acct="tandalos" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:37 p2016176 kernel: audit: type=1103 audit(1636745317.978:42): pid=391 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=? acct="tandalos" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=failed'
+Nov 12 21:28:37 p2016176 kernel: audit: type=1006 audit(1636745317.978:43): pid=391 uid=0 old-auid=4294967295 auid=1000 tty=(none) old-ses=4294967295 ses=2 res=1
+Nov 12 21:28:37 p2016176 audit[391]: SYSCALL arch=c000003e syscall=1 success=yes exit=4 a0=9 a1=7ffca1a2a850 a2=4 a3=3e8 items=0 ppid=1 pid=391 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=2 comm="(systemd)" exe="/usr/lib/systemd/systemd" key=(null)
+Nov 12 21:28:37 p2016176 audit: PROCTITLE proctitle="(systemd)"
+Nov 12 21:28:37 p2016176 audit[391]: USER_START pid=391 uid=0 auid=1000 ses=2 msg='op=PAM:session_open grantors=pam_loginuid,pam_loginuid,pam_keyinit,pam_limits,pam_unix,pam_permit,pam_mail,pam_systemd,pam_env acct="tandalos" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:37 p2016176 systemd[391]: pam_warn(systemd-user:setcred): function=[pam_sm_setcred] flags=0x8002 service=[systemd-user] terminal=[] user=[tandalos] ruser=[<unknown>] rhost=[<unknown>]
+Nov 12 21:28:37 p2016176 systemd[391]: pam_unix(systemd-user:session): session opened for user tandalos(uid=1000) by (uid=0)
+Nov 12 21:28:37 p2016176 systemd[391]: pam_env(systemd-user:session): deprecated reading of user environment enabled
+Nov 12 21:28:38 p2016176 audit: BPF prog-id=23 op=LOAD
+Nov 12 21:28:38 p2016176 audit[391]: SYSCALL arch=c000003e syscall=321 success=yes exit=8 a0=5 a1=7fffa4256830 a2=78 a3=7fffa4256830 items=0 ppid=1 pid=391 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=2 comm="systemd" exe="/usr/lib/systemd/systemd" key=(null)
+Nov 12 21:28:38 p2016176 audit: PROCTITLE proctitle="(systemd)"
+Nov 12 21:28:38 p2016176 audit: BPF prog-id=23 op=UNLOAD
+Nov 12 21:28:38 p2016176 systemd[391]: Queued start job for default target Main User Target.
+Nov 12 21:28:38 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=user@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:38 p2016176 audit[385]: USER_START pid=385 uid=0 auid=1000 ses=1 msg='op=PAM:session_open grantors=pam_loginuid,pam_keyinit,pam_limits,pam_unix,pam_permit,pam_mail,pam_systemd,pam_env acct="tandalos" exe="/usr/bin/login" hostname=p2016176 addr=? terminal=/dev/tty1 res=success'
+Nov 12 21:28:38 p2016176 audit[385]: CRED_REFR pid=385 uid=0 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_securetty,pam_shells,pam_faillock,pam_permit,pam_faillock acct="tandalos" exe="/usr/bin/login" hostname=p2016176 addr=? terminal=/dev/tty1 res=success'
+Nov 12 21:28:39 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=wpa_supplicant comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:38 p2016176 login[385]: pam_env(login:session): deprecated reading of user environment enabled
+Nov 12 21:28:38 p2016176 systemd[391]: Created slice User Application Slice.
+Nov 12 21:28:38 p2016176 login[385]: LOGIN ON tty1 BY tandalos
+Nov 12 21:28:38 p2016176 systemd[391]: Reached target Paths.
+Nov 12 21:28:39 p2016176 dbus-daemon[369]: [system] Activating via systemd: service name='fi.w1.wpa_supplicant1' unit='wpa_supplicant.service' requested by ':1.2' (uid=0 pid=370 comm="/usr/bin/NetworkManager --no-daemon ")
+Nov 12 21:28:38 p2016176 systemd[391]: Reached target Timers.
+Nov 12 21:28:39 p2016176 dbus-daemon[369]: [system] Successfully activated service 'fi.w1.wpa_supplicant1'
+Nov 12 21:28:38 p2016176 systemd[391]: Starting D-Bus User Message Bus Socket...
+Nov 12 21:28:39 p2016176 wpa_supplicant[401]: Successfully initialized wpa_supplicant
+Nov 12 21:28:38 p2016176 systemd[391]: Listening on GnuPG network certificate management daemon.
+Nov 12 21:28:38 p2016176 systemd[391]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Nov 12 21:28:38 p2016176 systemd[391]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Nov 12 21:28:38 p2016176 systemd[391]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Nov 12 21:28:38 p2016176 systemd[391]: Listening on GnuPG cryptographic agent and passphrase cache.
+Nov 12 21:28:38 p2016176 systemd[391]: Listening on p11-kit server.
+Nov 12 21:28:38 p2016176 systemd[391]: Listening on D-Bus User Message Bus Socket.
+Nov 12 21:28:38 p2016176 systemd[391]: Reached target Sockets.
+Nov 12 21:28:38 p2016176 systemd[391]: Reached target Basic System.
+Nov 12 21:28:38 p2016176 systemd[391]: Reached target Main User Target.
+Nov 12 21:28:38 p2016176 systemd[391]: Startup finished in 546ms.
+Nov 12 21:28:38 p2016176 systemd[1]: Started User Manager for UID 1000.
+Nov 12 21:28:38 p2016176 systemd[1]: Started Session 1 of User tandalos.
+Nov 12 21:28:39 p2016176 systemd[1]: Starting WPA supplicant...
+Nov 12 21:28:39 p2016176 NetworkManager[370]: <info>  [1636745319.1460] ovsdb: Could not connect: No such file or directory
+Nov 12 21:28:39 p2016176 NetworkManager[370]: <info>  [1636745319.1461] ovsdb: disconnected from ovsdb
+Nov 12 21:28:39 p2016176 systemd[1]: Started WPA supplicant.
+Nov 12 21:28:39 p2016176 NetworkManager[370]: <info>  [1636745319.9535] device (wlp3s0): supplicant interface state: internal-starting -> disconnected
+Nov 12 21:28:39 p2016176 NetworkManager[370]: <info>  [1636745319.9537] Wi-Fi P2P device controlled by interface wlp3s0 created
+Nov 12 21:28:39 p2016176 NetworkManager[370]: <info>  [1636745319.9543] manager: (p2p-dev-wlp3s0): new 802.11 Wi-Fi P2P device (/org/freedesktop/NetworkManager/Devices/4)
+Nov 12 21:28:39 p2016176 NetworkManager[370]: <info>  [1636745319.9549] device (p2p-dev-wlp3s0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Nov 12 21:28:39 p2016176 NetworkManager[370]: <info>  [1636745319.9565] device (wlp3s0): state change: unavailable -> disconnected (reason 'supplicant-available', sys-iface-state: 'managed')
+Nov 12 21:28:39 p2016176 NetworkManager[370]: <info>  [1636745319.9578] device (p2p-dev-wlp3s0): state change: unavailable -> disconnected (reason 'none', sys-iface-state: 'managed')
+Nov 12 21:28:40 p2016176 wpa_supplicant[401]: wlp3s0: CTRL-EVENT-REGDOM-CHANGE init=BEACON_HINT type=UNKNOWN
+Nov 12 21:28:44 p2016176 systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+Nov 12 21:28:44 p2016176 kernel: kauditd_printk_skb: 11 callbacks suppressed
+Nov 12 21:28:44 p2016176 kernel: audit: type=1131 audit(1636745324.198:51): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:44 p2016176 audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8014] policy: auto-activating connection 'Tandalos' (92322ff0-c96c-41ea-b674-e3affb4ac782)
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8020] device (wlp3s0): Activation: starting connection 'Tandalos' (92322ff0-c96c-41ea-b674-e3affb4ac782)
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8020] device (wlp3s0): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8023] manager: NetworkManager state is now CONNECTING
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8031] device (wlp3s0): set-hw-addr: reset MAC address to 30:F7:72:04:A8:E3 (preserve)
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8067] device (wlp3s0): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8070] device (wlp3s0): Activation: (wifi) access point 'Tandalos' has security, but secrets are required.
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8070] device (wlp3s0): state change: config -> need-auth (reason 'none', sys-iface-state: 'managed')
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8072] sup-iface[f4573f9350810449,0,wlp3s0]: wps: type pbc start...
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8091] device (wlp3s0): state change: need-auth -> prepare (reason 'none', sys-iface-state: 'managed')
+Nov 12 21:28:44 p2016176 kernel: ACPI Warning: \_SB.PCI0.RP01.PXSX._DSM: Argument #4 type mismatch - Found [Buffer], ACPI requires [Package] (20210604/nsarguments-61)
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8094] device (wlp3s0): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8097] device (wlp3s0): Activation: (wifi) connection 'Tandalos' has security, and secrets exist.  No new secrets needed.
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8097] Config: added 'ssid' value 'Tandalos'
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8097] Config: added 'scan_ssid' value '1'
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8097] Config: added 'bgscan' value 'simple:30:-70:86400'
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8097] Config: added 'key_mgmt' value 'WPA-PSK WPA-PSK-SHA256 FT-PSK'
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8097] Config: added 'auth_alg' value 'OPEN'
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8097] Config: added 'psk' value '<hidden>'
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8626] device (wlp3s0): supplicant interface state: disconnected -> scanning
+Nov 12 21:28:44 p2016176 NetworkManager[370]: <info>  [1636745324.8626] device (p2p-dev-wlp3s0): supplicant management interface state: disconnected -> scanning
+Nov 12 21:28:45 p2016176 wpa_supplicant[401]: wlp3s0: CTRL-EVENT-REGDOM-CHANGE init=BEACON_HINT type=UNKNOWN
+Nov 12 21:28:48 p2016176 systemd[391]: Started D-Bus User Message Bus.
+Nov 12 21:28:49 p2016176 wpa_supplicant[401]: wlp3s0: SME: Trying to authenticate with b0:ac:d2:29:ff:01 (SSID='Tandalos' freq=2412 MHz)
+Nov 12 21:28:49 p2016176 kernel: wlp3s0: authenticate with b0:ac:d2:29:ff:01
+Nov 12 21:28:49 p2016176 kernel: wlp3s0: send auth to b0:ac:d2:29:ff:01 (try 1/3)
+Nov 12 21:28:49 p2016176 NetworkManager[370]: <info>  [1636745329.7370] device (wlp3s0): supplicant interface state: scanning -> authenticating
+Nov 12 21:28:49 p2016176 NetworkManager[370]: <info>  [1636745329.7371] device (p2p-dev-wlp3s0): supplicant management interface state: scanning -> authenticating
+Nov 12 21:28:49 p2016176 wpa_supplicant[401]: wlp3s0: Trying to associate with b0:ac:d2:29:ff:01 (SSID='Tandalos' freq=2412 MHz)
+Nov 12 21:28:49 p2016176 kernel: wlp3s0: send auth to b0:ac:d2:29:ff:01 (try 2/3)
+Nov 12 21:28:49 p2016176 kernel: wlp3s0: authenticated
+Nov 12 21:28:49 p2016176 kernel: wlp3s0: associate with b0:ac:d2:29:ff:01 (try 1/3)
+Nov 12 21:28:49 p2016176 NetworkManager[370]: <info>  [1636745329.8387] device (wlp3s0): supplicant interface state: authenticating -> associating
+Nov 12 21:28:49 p2016176 NetworkManager[370]: <info>  [1636745329.8387] device (p2p-dev-wlp3s0): supplicant management interface state: authenticating -> associating
+Nov 12 21:28:49 p2016176 kernel: wlp3s0: RX AssocResp from b0:ac:d2:29:ff:01 (capab=0x1011 status=0 aid=2)
+Nov 12 21:28:49 p2016176 wpa_supplicant[401]: wlp3s0: Associated with b0:ac:d2:29:ff:01
+Nov 12 21:28:49 p2016176 wpa_supplicant[401]: wlp3s0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+Nov 12 21:28:49 p2016176 kernel: wlp3s0: associated
+Nov 12 21:28:49 p2016176 kernel: wlp3s0: Limiting TX power to 20 (20 - 0) dBm as advertised by b0:ac:d2:29:ff:01
+Nov 12 21:28:49 p2016176 NetworkManager[370]: <info>  [1636745329.8539] device (wlp3s0): supplicant interface state: associating -> associated
+Nov 12 21:28:49 p2016176 NetworkManager[370]: <info>  [1636745329.8540] device (p2p-dev-wlp3s0): supplicant management interface state: associating -> associated
+Nov 12 21:28:49 p2016176 NetworkManager[370]: <info>  [1636745329.8694] device (wlp3s0): supplicant interface state: associated -> 4way_handshake
+Nov 12 21:28:49 p2016176 NetworkManager[370]: <info>  [1636745329.8695] device (p2p-dev-wlp3s0): supplicant management interface state: associated -> 4way_handshake
+Nov 12 21:28:50 p2016176 wpa_supplicant[401]: wlp3s0: WPA: Key negotiation completed with b0:ac:d2:29:ff:01 [PTK=CCMP GTK=TKIP]
+Nov 12 21:28:50 p2016176 wpa_supplicant[401]: wlp3s0: CTRL-EVENT-CONNECTED - Connection to b0:ac:d2:29:ff:01 completed [id=0 id_str=]
+Nov 12 21:28:50 p2016176 kernel: IPv6: ADDRCONF(NETDEV_CHANGE): wlp3s0: link becomes ready
+Nov 12 21:28:50 p2016176 NetworkManager[370]: <info>  [1636745330.0556] device (wlp3s0): supplicant interface state: 4way_handshake -> completed
+Nov 12 21:28:50 p2016176 NetworkManager[370]: <info>  [1636745330.0558] device (wlp3s0): Activation: (wifi) Stage 2 of 5 (Device Configure) successful. Connected to wireless network "Tandalos"
+Nov 12 21:28:50 p2016176 NetworkManager[370]: <info>  [1636745330.0559] device (p2p-dev-wlp3s0): supplicant management interface state: 4way_handshake -> completed
+Nov 12 21:28:50 p2016176 NetworkManager[370]: <info>  [1636745330.0564] device (wlp3s0): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+Nov 12 21:28:50 p2016176 NetworkManager[370]: <info>  [1636745330.0583] dhcp4 (wlp3s0): activation: beginning transaction (timeout in 45 seconds)
+Nov 12 21:28:50 p2016176 wpa_supplicant[401]: wlp3s0: CTRL-EVENT-SIGNAL-CHANGE above=1 signal=-50 noise=-113 txrate=1000
+Nov 12 21:28:50 p2016176 NetworkManager[370]: <info>  [1636745330.8011] dhcp4 (wlp3s0): state changed unknown -> bound, address=192.168.1.8
+Nov 12 21:28:50 p2016176 NetworkManager[370]: <info>  [1636745330.8029] device (wlp3s0): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+Nov 12 21:28:50 p2016176 dbus-daemon[369]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.2' (uid=0 pid=370 comm="/usr/bin/NetworkManager --no-daemon ")
+Nov 12 21:28:50 p2016176 systemd[1]: Starting Network Manager Script Dispatcher Service...
+Nov 12 21:28:50 p2016176 dbus-daemon[369]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Nov 12 21:28:50 p2016176 systemd[1]: Started Network Manager Script Dispatcher Service.
+Nov 12 21:28:50 p2016176 audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:50 p2016176 kernel: audit: type=1130 audit(1636745330.825:52): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:28:50 p2016176 NetworkManager[370]: <info>  [1636745330.9249] device (wlp3s0): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+Nov 12 21:28:50 p2016176 NetworkManager[370]: <info>  [1636745330.9258] device (wlp3s0): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+Nov 12 21:28:50 p2016176 NetworkManager[370]: <info>  [1636745330.9276] manager: NetworkManager state is now CONNECTED_LOCAL
+Nov 12 21:28:50 p2016176 NetworkManager[370]: <info>  [1636745330.9303] manager: NetworkManager state is now CONNECTED_SITE
+Nov 12 21:28:50 p2016176 NetworkManager[370]: <info>  [1636745330.9307] policy: set 'Tandalos' (wlp3s0) as default for IPv4 routing and DNS
+Nov 12 21:28:50 p2016176 dbus-daemon[369]: [system] Activating via systemd: service name='org.freedesktop.resolve1' unit='dbus-org.freedesktop.resolve1.service' requested by ':1.2' (uid=0 pid=370 comm="/usr/bin/NetworkManager --no-daemon ")
+Nov 12 21:28:50 p2016176 dbus-daemon[369]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.resolve1.service': Unit dbus-org.freedesktop.resolve1.service not found.
+Nov 12 21:28:51 p2016176 NetworkManager[370]: <info>  [1636745331.2818] device (wlp3s0): Activation: successful, device activated.
+Nov 12 21:28:51 p2016176 NetworkManager[370]: <info>  [1636745331.3517] manager: startup complete
+Nov 12 21:28:52 p2016176 NetworkManager[370]: <info>  [1636745332.0839] dhcp6 (wlp3s0): activation: beginning transaction (timeout in 45 seconds)
+Nov 12 21:28:52 p2016176 NetworkManager[370]: <info>  [1636745332.0868] policy: set 'Tandalos' (wlp3s0) as default for IPv6 routing and DNS
+Nov 12 21:28:52 p2016176 NetworkManager[370]: <info>  [1636745332.3280] dhcp6 (wlp3s0): state changed unknown -> bound
+Nov 12 21:28:52 p2016176 NetworkManager[370]: <info>  [1636745332.3299] manager: NetworkManager state is now CONNECTED_GLOBAL
+Nov 12 21:29:01 p2016176 systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+Nov 12 21:29:01 p2016176 audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:29:01 p2016176 kernel: audit: type=1131 audit(1636745341.165:53): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:29:03 p2016176 systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+Nov 12 21:29:03 p2016176 audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-hostnamed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:29:03 p2016176 kernel: audit: type=1131 audit(1636745343.412:54): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-hostnamed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Nov 12 21:29:03 p2016176 audit: BPF prog-id=22 op=UNLOAD
+Nov 12 21:29:03 p2016176 audit: BPF prog-id=21 op=UNLOAD
+Nov 12 21:29:03 p2016176 audit: BPF prog-id=20 op=UNLOAD
+Nov 12 21:29:03 p2016176 kernel: audit: type=1334 audit(1636745343.542:55): prog-id=22 op=UNLOAD
+Nov 12 21:29:03 p2016176 kernel: audit: type=1334 audit(1636745343.542:56): prog-id=21 op=UNLOAD
+Nov 12 21:29:03 p2016176 kernel: audit: type=1334 audit(1636745343.542:57): prog-id=20 op=UNLOAD
+Nov 12 21:29:08 p2016176 kernel: i915 0000:00:02.0: [drm] HPD interrupt storm detected on connector DP-1: switching from hotplug detection to polling
