@@ -1,0 +1,15 @@
+#Download Youtube Songs and Playlists
+#Using youtube-dl and ffmpeg
+#Yout music folder path
+MUSIC_LIB_PATH="/home/tandalos/media/music/"
+#Wrong Syntax
+if test "$#" -lt 1; then
+    echo "Enter Youtube-Song URL as an input parameter."
+    echo "Example use: $ ./ym YOUTUBE_LINK"
+    exit
+fi
+#Make folder if there isnt
+mkdir -p $MUSIC_LIB_PATH
+#Download video with its meta data and cover art.
+youtube-dl --extract-audio --audio-format mp3  --embed-thumbnail --output "${MUSIC_LIB_PATH}%(title)s.%(ext)s" --add-metadata --metadata-from-title "%(artist)s - %(title)s" --no-mtime $1
+echo "Download Completed. Find downloaded content at: ${MUSIC_LIB_PATH}"
